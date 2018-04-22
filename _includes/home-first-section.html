@@ -1,0 +1,24 @@
+<section class="first-section clearfix">
+	<div class="container-fluid container-color">
+
+		<div class="ad top-ad">
+{% include /ad-type-1.html %}
+		</div>
+		<div class="titel-wrapper">
+			<h2>С чего начать</h2>
+			<h3 class="h3-first">Быстрый</h3>
+			<h3 class="h3-second">Старт</h3>
+		</div>
+
+		<div class="row no-gutters">
+
+{% for post in site.categories.start limit: 3 offset: 0 %}
+{% include /home-first-section-item-1.html %}
+{% endfor %}
+
+{% for post in site.categories.start limit: 2 offset: 3 %}
+{% include /home-first-section-item-2.html %}
+{% endfor %}
+		</div>
+	</div>
+</section>

@@ -1,0 +1,35 @@
+<section class="second-section">
+
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-md-8">
+
+				<div class="titel-wrapper">
+					<h2>Стильное оформление</h2>
+					<h3 class="h3-first">Web</h3>
+					<h3 class="h3-second">Дизайн</h3>
+				</div>
+				
+				<div class="row news-wrap">
+
+{% for post in site.categories.web limit: 4 offset: 0 %}
+{% include /home-second-section-item.html %}
+{% endfor %}
+
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="aside-box">
+{% include /ad-type-2.html %}
+				</div>
+				<div class="aside-box">
+{% include /ad-type-2.html %}
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</section>

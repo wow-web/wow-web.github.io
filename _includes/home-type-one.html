@@ -1,0 +1,27 @@
+<section class="type-one">
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-sm-12">
+				<div class="titel-wrapper">
+					<h2>Ускорение</h2>
+					<h3 class="h3-first">Полная</h3>
+					<h3 class="h3-second">Оптимизация</h3>
+				</div>
+			</div>
+
+			<div class="col-md-7">
+{% for post in site.categories.boost limit: 1 offset: 0 %}
+{% include /home-type-one-item-1.html %}
+{% endfor %}
+			</div>
+
+			<div class="col-md-5 item-title-white">
+{% for post in site.categories.boost limit: 2 offset: 1 %}
+{% include /home-type-one-item-2.html %}
+{% endfor %}
+			</div>
+
+		</div>
+	</div>
+</section>

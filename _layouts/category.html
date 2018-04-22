@@ -1,0 +1,67 @@
+{% include /header-category.html %}
+
+{% include /top-line.html %}
+
+{% include /category-top-image.html %}
+
+	<div class="cat-list-first">
+		<div class="container-fluid container-color">
+			<div class="ad top-ad">
+
+{% include /ad-type-1.html %}
+
+			</div>
+
+			<section class="type-one type-one-cat">
+				<div class="row">
+						<div class="col-md-7">
+
+{% for post in paginator.posts limit: 1 offset: 0 %}
+{% include /home-type-one-item-1.html %}
+{% endfor %}
+
+						</div>
+
+						<div class="col-md-5 item-title-white">
+
+{% for post in paginator.posts limit: 2 offset: 1 %}
+{% include /home-type-one-item-2.html %}
+{% endfor %}
+
+						</div>
+				</div>
+			</section>
+
+		</div>
+	</div>
+
+	<div class="cat-list">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="cat-list-wrap">
+							<div class="cat-list-wrap">
+
+{% for post in paginator.posts offset: 3 %}
+{% include /category-list-item.html %}
+{% endfor %}
+							</div>
+					</div>
+
+{% include /pagination-type-1.html %}
+
+				</div>
+
+				<div class="col-md-4">
+
+{% include /aside.html %}
+					
+				</div>
+			</div>
+		</div>
+
+{% include /pagination-type-2.html %}
+
+	</div>
+
+{% include /footer.html %}
