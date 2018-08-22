@@ -1,0 +1,79 @@
+.page-header
+	display: flex
+	flex-direction: column
+
+.page-header__top
+	padding-top: 29px
+	padding-bottom: 29px
+
+.button
+	display: block
+	margin: 0 auto
+	cursor: pointer
+
+	height: 60px
+	width: 100%
+
+	text-transform: uppercase
+	font-size: 14px
+	font-weight: bold
+	color: $light
+
+	background-color: transparent
+	border: 1px solid $dark
+
+.page-header__title
+	margin-top: 40px
+	margin-bottom: 25px
+
+	font-family: $f-font
+	font-size: 42px
+	font-weight: 300
+	text-align: center
+	line-height: 1.2
+
+.page-header__button
+	position: relative
+	overflow: hidden
+
+	display: block
+	width: 320px
+	margin-bottom: 10px
+
+	color: $dark
+
+	transition: all .5s ease
+	background-color: rgba($light, .45)
+	&:hover,
+	&:focus
+		color: $dark
+		border: 1px solid $dark
+		border-radius: 45px
+
+.page-header__description
+	font-family: $f-font
+	font-weight: 300
+	font-size: 14px
+	text-align: center
+	letter-spacing: 1.5px
+
+.page-header__filters
+	padding-top: 25px
+	padding-bottom: 25px
+
+@media (min-width: $tablet-width)
+	.page-header__wrapper
+		width: 640px
+		margin-right: auto
+		margin-left: auto
+
+	.button
+		width: 220px
+
+@media (min-width: $desktop-width)
+	.page-header
+		min-height: 420px
+		justify-content: space-between
+
+	.page-header__wrapper
+		width: 960px

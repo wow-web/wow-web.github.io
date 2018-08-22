@@ -1,0 +1,11 @@
+<section class="catalog catalog--wrapper">
+
+	<h2 class="visualy-hidden">Каталог доступных помещений</h2>
+
+	<ul class="catalog__list">
+
+{% for post in site.posts %}
+{% include /catalog-item--home.html %}
+{% endfor %}
+
+</section>

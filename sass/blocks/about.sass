@@ -1,0 +1,101 @@
+.about
+	position: relative
+
+	display: flex
+	flex-direction: column
+	justify-content: center
+	min-height: 400px
+
+	text-decoration: none
+
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	&::after
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+
+		width: 100%
+		height: 100%
+
+		background-color: rgba(0, 0, 0, .5)
+
+.about__title
+	margin-top: 15px
+	margin-bottom: 15px
+
+	font-family: $f-font
+	font-size: 28px
+	font-weight: 500
+	&::after
+		content: ''
+		display: block
+		width: 170px
+		height: 1px
+		margin: 0 auto
+		background-color: rgba($light, .2)
+
+.about__text
+	display: block
+
+	position: relative
+
+	font-size: 14px
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+
+		width: 25px
+		height: 25px
+		margin-left: -25px
+
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: contain
+
+.about__title,
+.about__text
+	z-index: 1
+
+.about__text--offise::before
+	background-image: url(../img/icons/office.svg)
+
+.about__text--stock::before
+	background-image: url(../img/icons/stock.svg)
+
+.about__text--manufacture::before
+	background-image: url(../img/icons/factory.svg)
+
+.about__text--open::before
+	background-image: url(../img/icons/place.svg)
+
+.about__text--adress
+	margin-bottom: 10px
+	&::before
+		width: 18px
+		height: 18px
+		background-image: url(../img/icons/gps-w.svg)
+
+.about__text--area
+	&::before
+		width: 18px
+		height: 18px
+		background-image: url(../img/icons/area.svg)
+
+.about__text--type
+	font-family: $f-font
+	font-weight: 300
+	&::before
+		display: block
+		margin-right: auto
+		margin-left: auto
+
+		position: static
+		left: auto
+		top: 0
+
+.about__text--area
+	margin: 0
