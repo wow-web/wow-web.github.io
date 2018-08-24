@@ -1,0 +1,25 @@
+<section class="information">
+
+	<h2 class="information__title">Информация:</h2>
+	<table class="information__table table">
+		<tr class="table__line">
+			<td class="table__title">Общая площадь:</td>
+			<td class="table__value">{{ page.area }}</td>
+		</tr>
+		<tr class="table__line">
+			<td class="table__title">Этаж:</td>
+			<td class="table__value">{{ page.floor }}</td>
+		</tr>
+		<tr class="table__line">
+			<td class="table__title">Инженерные системы:</td>
+			<td class="table__value">{{ page.systems }}</td>
+		</tr>
+		<tr class="table__line">
+			<td class="table__title table__title--last">Ставка аренды:</td>
+			<td class="table__value table__value--last">{{ page.rate }}</td>
+		</tr>
+	</table>
+	<button class="button information__button information__button--red" type="button">Оставить заявку</button>
+	<button class="button information__button information__button--icon" type="button">Получить презентацию</button>
+
+</section>

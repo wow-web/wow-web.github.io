@@ -1,0 +1,57 @@
+.contacts
+	margin-top: 70px
+	margin-bottom: 100px
+
+.contacts__title
+	font-family: $f-font
+	font-weight: normal
+	font-size: 32px
+	color: #000
+
+.contacts__adress
+	padding-top: 20px
+	&::before
+		content: ''
+		display: inline-block
+		width: 18px
+		height: 20px
+		margin-right: 7px
+		margin-bottom: -5px
+
+		background-image: url(../img/icons/gps-a.svg)
+		background-repeat: no-repeat
+		background-size: contain
+
+.contacts__phone
+	&::before
+		content: ''
+		display: inline-block
+		width: 15px
+		height: 17px
+		margin-right: 7px
+		margin-bottom: -5px
+
+		background-image: url(../img/icons/phone-a.svg)
+		background-repeat: no-repeat
+		background-size: contain
+
+.contacts__mail
+	text-decoration: underline
+	color: $accent
+	&::before
+		content: ''
+		display: inline-block
+		width: 15px
+		height: 17px
+		margin-right: 7px
+		margin-bottom: -5px
+
+		background-image: url(../img/icons/mail-a.svg)
+		background-repeat: no-repeat
+		background-size: contain
+
+.contacts__adress,
+.contacts__phone,
+.contacts__mail
+	margin: 0
+	font-family: $f-font
