@@ -1,0 +1,59 @@
+.information
+	display: flex
+	flex-direction: column
+	flex-basis: 0
+	flex-grow: 1
+	height: 420px
+	padding: 30px
+
+	border: 5px solid $light
+
+.information__title
+	margin: 0
+	padding-bottom: 20px
+
+	font-family: $f-font
+	font-weight: normal
+	font-size: 26px
+	color: #000
+
+.information__button
+	width: 100%
+	color: darken($light, 15%)
+
+.information__button--red
+	margin-bottom: 20px
+
+	background-color: $accent
+	border: none
+	box-shadow: 0px 10px 30px 0px rgba($accent, 0.5)
+	color: $light
+	&:focus,
+	&:hover
+		background-color: darken($accent, 5%)
+	&:active
+		background-color: lighten($accent, 20%)
+
+.information__button--icon
+	border: 1px solid darken($light, 15%)
+	line-height: 1.5
+	trasition: all .25s ease
+	&::before
+		content: ''
+		display: inline-block
+		width: 19px
+		height: 19px
+		margin-right: 7px
+		margin-bottom: -4px
+
+		background-image: url(../img/icons/file.svg)
+		background-repeat: no-repeat
+		background-size: contain
+	&:hover,
+	&:active
+		color: darken($light, 30%)
+		border: 1px solid darken($light, 50%)
+
+@media (min-width: $tablet-width)
+	.information__button--icon
+		line-height: 55px

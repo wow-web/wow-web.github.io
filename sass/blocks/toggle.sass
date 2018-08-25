@@ -1,0 +1,25 @@
+.toggle
+	display: flex
+	z-index: 10
+	@include reset-list
+
+.toggle__item
+	position: absolute
+	top: 200px
+
+.toggle__item--left
+	right: 0
+	left: auto
+
+.toggle__svg
+	transition: all .25s ease
+	fill: $light
+
+.toggle__link
+	svg
+		padding: 20px
+		background-color: $dark
+
+.toggle__link:hover
+	.toggle__svg
+		fill: $accent

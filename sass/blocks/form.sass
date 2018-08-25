@@ -1,0 +1,39 @@
+.form
+	display: flex
+	flex-direction: column
+
+.form__main
+	margin: 0
+
+.form__input
+	height: 55px
+	width: 100%
+
+	border: none
+	&:focus
+		box-shadow: 0px 0px 5px 2px rgba($light,0.5)
+
+.form__button
+	margin: 0
+
+	background-color: $accent
+	box-shadow: 0px 10px 30px 0px rgba($accent, 0.5)
+	border: none
+	transition: all .25s ease
+	&:hover,
+	&:focus
+		background-color: darken($accent, 5%)
+	&:active
+		background-color: lighten($accent, 20%)
+
+@media (min-width: $desktop-width)
+	.form
+		flex-direction: row
+	
+	.form__input
+		width: 470px
+		margin-right: 20px
+		padding-left: 20px
+
+	.form__button
+		width: 250px
