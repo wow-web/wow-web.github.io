@@ -5,18 +5,24 @@ description: Брокеридж - подбор помещений под аре�
 url: 'http://m-y.com'
 baseurl: "/"
 themecolor: '#1e1c21'
-imagehome: img/logotype.png
 
-plugins: [jekyll-paginate-v2]
-pagination:
-  enabled: true
-  per_page: 9
-  title: ':title - Страница :num'
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
-  trail:
-    before: 2
-    after: 2
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
 
-exclude: ['node_modules', 'gulpfile.js', 'package.json', 'package-lock.json', 'js/common.js', 'npm-debug.log', '**/Thumbs.db', 'sass']
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - package.json
+  - package-lock.json
+  - npm-debug.log
+  - sass/
+  - gulpfile.js

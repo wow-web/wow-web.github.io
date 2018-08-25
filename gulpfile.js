@@ -19,7 +19,7 @@ gulp.task('style', function () {
 		.pipe(postcss([
 			autoprefixer(['last 15 versions'])
 		]))
-		.pipe(gulp.dest('build/css'))
+		.pipe(gulp.dest('_site/css'))
 		.pipe(minify())
 		.pipe(rename('main.min.css'))
 		.pipe(gulp.dest('css'))

@@ -106,6 +106,15 @@ for (var i=0; i < el.length; i++) {
 
 var htmlItems = document.querySelectorAll('.main-item');
 
+var pagination = {
+	m : 16,
+	i : 1,
+	next : '',
+	prev : '',
+	mass : []
+};
+
+
 
 //Раздаем data-атрибуты
 
@@ -269,39 +278,84 @@ var getSortValue = function (mass) {
 };
 
 var test = function (values) {
-	for (i=0; i<htmlItems.length; i++) {
+	var element = '';
+	var j = 0;
+
+	pagination.mass.length = 0;
+
+	for (var i=0; i < htmlItems.length; i++) {
 
 		var regionAttribute = htmlItems[i].getAttribute('data-region');
 		var purposeAttribute = htmlItems[i].getAttribute('data-purpose');
 		var areaAttribute = htmlItems[i].getAttribute('data-area');
 
-		if (!((regionAttribute === values[0] || values[0] === '0') && (purposeAttribute === values[1] || values[1] === '0') && (areaAttribute === values[2] || values[2] === '0'))) {
-			htmlItems[i].style.display = 'none';
-			deleted++;
-			console.log(deleted);
+		if ((regionAttribute === values[0] || values[0] === '0') && (purposeAttribute === values[1] || values[1] === '0') && (areaAttribute === values[2] || values[2] === '0')) {
+			pagination.mass[j] = htmlItems[i];
+			j++;
 		};
 	};
 };
 
 var removeStyle = function () {
-
 	for (var i = 0; i < htmlItems.length; i++) {
-		htmlItems[i].style.display = '';
+		htmlItems[i].style.display = 'none';
 	};
-
-	deleted = 0;
-
 };
 
+
+var p = document.querySelector('.pagination');
+var next = p.querySelector('.next');
+var prev = p.querySelector('.prev');
+
+next.addEventListener('click', function () {
+	removeStyle();
+	pagination.i++;
+	paginator();
+});
+
+prev.addEventListener('click', function () {
+	removeStyle();
+	pagination.i--;
+	paginator();
+});
+
 sortButton.addEventListener('click', function (evt) {
-
 	var sortValues = [];
-
+	
 	evt.preventDefault();
+	pagination.mass.length = 0;
+	pagination.i = 1;
 	sortValues = getSortValue(optionValue);
 	removeStyle();
 	test(sortValues);
-	if (htmlItems.length <= deleted) {
-		console.log('Сейчас нет объектов под заданные параметры');
-	}
+	paginator();
 });
+
+var paginator = function () {
+	for (var j = pagination.m*(pagination.i-1); j < pagination.m*pagination.i && j < pagination.mass.length; j++) {
+		pagination.mass[j].style.display = '';
+	}
+	console.log(j);
+
+	next.classList.add('visualy-hidden');
+	prev.classList.add('visualy-hidden');
+
+	if (j < pagination.mass.length) {
+		next.classList.remove('visualy-hidden');
+	};
+
+	if (pagination.i - 1 > 0) {
+		prev.classList.remove('visualy-hidden');
+	};
+
+};
+
+var main = function () {
+	var sortValues = [];
+	sortValues = getSortValue(optionValue);
+	removeStyle();
+	test(sortValues);
+	paginator();
+
+};
+main();
