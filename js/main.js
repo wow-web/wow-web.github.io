@@ -245,7 +245,13 @@ var changeClass = function (typeText, typeElement) {
 	}
 	else if (typeText === purpose.a[3][0] || typeText === purpose.a[3][1]) {
 		typeElement.classList.add('about__text--open')
-	};
+	}
+	else if (typeText === purpose.a[4][0] || typeText === purpose.a[4][1]) {
+		typeElement.classList.add('about__text--storeroom')
+	}
+	else if (typeText === purpose.a[5][0] || typeText === purpose.a[5][1]) {
+		typeElement.classList.add('about__text--workshop')
+	}
 
 };
 
