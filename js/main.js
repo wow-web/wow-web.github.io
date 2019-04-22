@@ -26,7 +26,7 @@ var name = popup.querySelector('[name=modal-name]');
 var number = popup.querySelector('[name=modal-number]');
 
 var openPopup = function() {
-	popup.classList.add('modal--show');
+	popup.classList.add('modal--show');3
 
 	if (storage) {
 		name.value = storage;
@@ -34,7 +34,7 @@ var openPopup = function() {
 	}
 	else {
 		console.log(name);
-		name.focus();
+		//name.focus();
 	};
 
 	document.addEventListener('keydown', onPopupEscPress);
