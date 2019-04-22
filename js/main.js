@@ -20,6 +20,8 @@ catch (err) {
 
 var popup = document.querySelector('.modal');
 var popupOpen = document.querySelector('.top-line__button');
+var popupOpen2 = document.querySelector('.page-header__button');
+var popupOpen3 = document.querySelector('.form__button');
 var popupClose = document.querySelector('.modal__button--close');
 var form = popup.querySelector('form');
 var name = popup.querySelector('.modal__name');
@@ -33,8 +35,7 @@ var openPopup = function() {
 		number.focus();
 	}
 	else {
-		console.log(name);
-		//name.focus();
+		name.focus();
 	};
 
 	document.addEventListener('keydown', onPopupEscPress);
@@ -61,7 +62,29 @@ popupOpen.addEventListener('keydown', function (evt) {
 	if (evt.keyCode === ENTER_KEYCODE) {
 		openPopup();
 	}
-})
+});
+
+popupOpen2.addEventListener('click', function (evt) {
+	evt.preventDefault();
+	openPopup();
+});
+
+popupOpen2.addEventListener('keydown', function (evt) {
+	if (evt.keyCode === ENTER_KEYCODE) {
+		openPopup();
+	}
+});
+
+popupOpen3.addEventListener('click', function (evt) {
+	evt.preventDefault();
+	openPopup();
+});
+
+popupOpen3.addEventListener('keydown', function (evt) {
+	if (evt.keyCode === ENTER_KEYCODE) {
+		openPopup();
+	}
+});
 
 popupClose.addEventListener('click', function (evt) {
 	evt.preventDefault();
