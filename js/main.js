@@ -3,13 +3,6 @@
 var ESC_KEYCODE = 27;
 var ENTER_KEYCODE = 13;
 
-var popup = document.querySelector('.modal');
-var popupOpen = document.querySelector('.top-line__button');
-var popupClose = document.querySelector('.modal__button--close');
-var form = popup.querySelector('form');
-var name = popup.querySelector('[name=modal-name]');
-var number = popup.querySelector('[name=modal-number]');
-
 var isStorageSupport = true;
 var storage = localStorage.getItem('name');
 
@@ -20,11 +13,17 @@ catch (err) {
 	isStorageSupport = false;
 }
 
-var onPopupEscPress = function(evt) {
-	if (evt.keyCode === ESC_KEYCODE) {
-		closePopup();
-	}
-};
+
+
+
+//Попап окно
+
+var popup = document.querySelector('.modal');
+var popupOpen = document.querySelector('.top-line__button');
+var popupClose = document.querySelector('.modal__button--close');
+var form = popup.querySelector('form');
+var name = popup.querySelector('[name=modal-name]');
+var number = popup.querySelector('[name=modal-number]');
 
 var openPopup = function() {
 	popup.classList.add('modal--show');
@@ -44,6 +43,12 @@ var closePopup = function() {
 	popup.classList.remove('modal--show');
 	popup.classList.remove('modal-error');
 	document.removeEventListener('keydown', onPopupEscPress);
+};
+
+var onPopupEscPress = function(evt) {
+	if (evt.keyCode === ESC_KEYCODE) {
+		closePopup();
+	}
 };
 
 popupOpen.addEventListener('click', function (evt) {
@@ -81,43 +86,78 @@ form.addEventListener('submit', function (evt) {
 });
 
 
-
+                                                          
 
 //Раздаем картинки
 
-var el = document.querySelectorAll('.about');
+// var el = document.querySelectorAll('.about');
 
-var namesImage = {
-	a : ['Буровая техника', 'Рябиновая', '1-й Тружеников переулок', 'Боровая', 'Рябиновая', 'Большая Бронная', 'Александровский завод'],
-	b : ['1', '2', '3', '4', '5', '6', '7']
-}
+// var namesImage = {
+// 	a : ['Буровая техника', 'Рябиновая', '1-й Тружеников переулок', 'Боровая', 'Рябиновая', 'Большая Бронная', 'Александровский завод'],
+// 	b : ['1', '2', '3', '4', '5', '6', '7']
+// }
 
-for (var i=0; i < el.length; i++) {
-	var elName = el[i].querySelector('.about__title').textContent;
-	for (var j=0; j < namesImage.a.length; j++) {
-		if (elName === namesImage.a[j]) {
-			el[i].style.backgroundImage = 'url(images/'+namesImage.b[j]+'-cover.jpg)';
-		}
+// for (var i=0; i < el.length; i++) {
+// 	var elName = el[i].querySelector('.about__title').textContent;
+// 	for (var j=0; j < namesImage.a.length; j++) {
+// 		if (elName === namesImage.a[j]) {
+// 			el[i].style.backgroundImage = 'url(images/'+namesImage.b[j]+'-cover.jpg)';
+// 		}
+// 	}
+// }
+
+
+
+
+var p = document.querySelector('.pagination');
+var next = p.querySelector('.next');
+var prev = p.querySelector('.prev');
+var pagination = {
+	m : 16,
+	i : 1,
+	mass : []
+};
+
+//Обработчик события "клик" на кнопку "Следующая страница"
+next.addEventListener('click', function () {
+	removeStyle();
+	pagination.i++;
+	paginator();
+});
+
+//Обработчик события "клик" на кнопку "Предыдущая страница"
+prev.addEventListener('click', function () {
+	removeStyle();
+	pagination.i--;
+	paginator();
+});
+
+//Функция разделения контента на страницы (по 16 элементов на каждой)
+//Показываем 16 элементов соответствующей страницы
+//Прячем кнопки "Следующая страница" и "Предыдущая страница"
+//Если мы показали еще не все элементы, то показываем кнопку "Следующая страница"
+//Если существуют элементы на предыдущей странице, то показываем кнопку "Предыдущая страница"
+var paginator = function () {
+	for (var j = pagination.m*(pagination.i-1); j < pagination.m*pagination.i && j < pagination.mass.length; j++) {
+		pagination.mass[j].style.display = '';
 	}
-}
+
+	next.classList.add('visualy-hidden');
+	prev.classList.add('visualy-hidden');
+
+	if (j < pagination.mass.length) {
+		next.classList.remove('visualy-hidden');
+	};
+
+	if (pagination.i - 1 > 0) {
+		prev.classList.remove('visualy-hidden');
+	};
+};
 
 
 
 
 var htmlItems = document.querySelectorAll('.main-item');
-
-var pagination = {
-	m : 16,
-	i : 1,
-	next : '',
-	prev : '',
-	mass : []
-};
-
-
-
-//Раздаем data-атрибуты
-
 var region = {
 	a :	[
 		['Санкт-Петербург', 'спб', 'СПБ', 'СПб','санкт-петербург','Санкт-петербург'],
@@ -127,7 +167,6 @@ var region = {
 	],
 	b : ['spb', 'moscow', 'omoscow', 'pushkin']
 };
-
 var purpose = {
 	a : [
 		['Офис', 'офис'],
@@ -139,7 +178,6 @@ var purpose = {
 	],
 	b : ['office', 'stock', 'production', 'open', 'storeroom', 'workshop']
 };
-
 var area = {
 	a : [
 		[10,70],
@@ -150,90 +188,75 @@ var area = {
 	b : ['1', '2', '3', '4']
 };
 
+// Функция получения значений i-того элемента
+var getAttributeValues = function (i) {
+	var textAdress = [];
+	var attributes = {
+		type : '',
+		adress : '',
+		area : ''
+	};
 
-var getValue = function (i) {
-
-		var text = [];
-		var attributes = {
-			type : '',
-			adress : '',
-			area : ''
-		};
-		attributes.area = htmlItems[i].querySelector('.about__text--area').textContent;
-		
-		attributes.type = htmlItems[i].querySelector('.about__text--type').textContent;
-
-
-		text = htmlItems[i].querySelector('.about__text--adress').textContent;
-		for (var i=0; i < region.a.length; i++){
-			if (text.indexOf(region.a[i][0]) + 1) {
-				attributes.adress = region.a[i][0];
-			}
-		};
-		
-
-
-		return attributes;
-
+	attributes.area = htmlItems[i].querySelector('.about__text--area').textContent;
+	attributes.type = htmlItems[i].querySelector('.about__text--type').textContent;
+	textAdress = htmlItems[i].querySelector('.about__text--adress').textContent;
+	for (var i = 0; i < region.a.length; i++){
+		if (textAdress.indexOf(region.a[i][0]) + 1) {
+			attributes.adress = region.a[i][0];
+		}
+	};
+	
+	return attributes;
 };
 
+//Функция записи data-атрибутов в i-тый элемент
 var recordAttributes = function (i, attributes) {
-	var n = 0;
-	var k;
-	var l;
+var n;
+var k, l;
 
-	for (k=0; k < region.a.length; k++) {
-		for (l=0; l < region.a[k].length && n === 0; l++) {
-			if (attributes.adress === region.a[k][l]) {
-				htmlItems[i].setAttribute('data-region', region.b[k])
-				n++;
-			}
+for (k = 0, n = 0; k < region.a.length; k++) {
+	for (l = 0; l < region.a[k].length && n === 0; l++) {
+		if (attributes.adress === region.a[k][l]) {
+			htmlItems[i].setAttribute('data-region', region.b[k]);
+			n++;
 		}
-	};
-
-	n = 0;
-
-	for (k=0; k < purpose.a.length; k++) {
-		for (l=0; l < purpose.a[k].length && n === 0; l++) {
-			if (attributes.type === purpose.a[k][l]) {
-				htmlItems[i].setAttribute('data-purpose', purpose.b[k])
-				n++;
-			}
-		}
-	};
-
-	n = 0;
-
-	for (k=0; k < area.a.length; k++) {
-		if (attributes.area >= area.a[k][0] && attributes.area < area.a[k][1]) {
-			htmlItems[i].setAttribute('data-area', area.b[k])
-		}
-	};
+	}
 };
 
-var handOutAttributes = function () {
+for (k = 0, n = 0; k < purpose.a.length; k++) {
+	for (l = 0; l < purpose.a[k].length && n === 0; l++) {
+		if (attributes.type === purpose.a[k][l]) {
+			htmlItems[i].setAttribute('data-purpose', purpose.b[k]);
+			n++;
+		}
+	}
+};
 
+for (k = 0, n = 0; k < area.a.length; k++) {
+	if (attributes.area >= area.a[k][0] && attributes.area < area.a[k][1]) {
+		htmlItems[i].setAttribute('data-area', area.b[k]);
+	}
+};
+};
+
+//Функция создания data-атрибутов из содержимого тегов
+//Получаем значение тега
+//Записываем соответствующий data-атрибут
+var handOutAttributes = function () {
 	var attributes = {};
 	var i;
 
-	for (i=0; i<htmlItems.length; i++) {
-		attributes = getValue(i);
+	for (i = 0; i < htmlItems.length; i++) {
+		attributes = getAttributeValues(i);
 		recordAttributes(i, attributes);
 	};
-
 };
-
 handOutAttributes();
 
 
 
-
-
-
-//Раздаем классы
-
+//В соответствии с содержимым тега добавляем класс
 var changeClass = function (typeText, typeElement) {
-
 	if (typeText === purpose.a[0][0] || typeText === purpose.a[0][1]) {
 		typeElement.classList.add('about__text--offise')
 	}
@@ -252,45 +275,39 @@ var changeClass = function (typeText, typeElement) {
 	else if (typeText === purpose.a[5][0] || typeText === purpose.a[5][1]) {
 		typeElement.classList.add('about__text--workshop')
 	}
-
 };
 
-for (var i=0; i<htmlItems.length; i++) {
-
-	var typeElement = htmlItems[i].querySelector('.about__text--type');
-	var typeText = typeElement.textContent;
-
-	changeClass(typeText, typeElement);
+//Находим элементы с классом about__text--type
+//Находим содержимое каждого из них
+//Добавляем соответствующий класс элементу
+var getClass = function () {
+	for (var i = 0; i < htmlItems.length; i++) {	
+		changeClass(htmlItems[i].querySelector('.about__text--type').textContent, htmlItems[i].querySelector('.about__text--type'));
+	};
 };
+getClass();
 
 
 
-
-//Форма сортировки
 
 var sort = document.querySelector('.sort');
 var sortButton = sort.querySelector('.button');
 var optionValue = sort.querySelectorAll('.sort__select');
-var deleted = 0;
 
 var getSortValue = function (mass) {
-	var i;
 	var a = [];
 
-	for (i=0; i<mass.length; i++) {
+	for (var i = 0; i < mass.length; i++) {
 		a[i] = mass[i].value;
 	}
+
 	return a;
 };
 
 var test = function (values) {
-	var element = '';
-	var j = 0;
-
 	pagination.mass.length = 0;
 
-	for (var i=0; i < htmlItems.length; i++) {
-
+	for (var i = 0, j = 0; i < htmlItems.length; i++) {
 		var regionAttribute = htmlItems[i].getAttribute('data-region');
 		var purposeAttribute = htmlItems[i].getAttribute('data-purpose');
 		var areaAttribute = htmlItems[i].getAttribute('data-area');
@@ -308,23 +325,6 @@ var removeStyle = function () {
 	};
 };
 
-
-var p = document.querySelector('.pagination');
-var next = p.querySelector('.next');
-var prev = p.querySelector('.prev');
-
-next.addEventListener('click', function () {
-	removeStyle();
-	pagination.i++;
-	paginator();
-});
-
-prev.addEventListener('click', function () {
-	removeStyle();
-	pagination.i--;
-	paginator();
-});
-
 sortButton.addEventListener('click', function (evt) {
 	var sortValues = [];
 	
@@ -337,31 +337,16 @@ sortButton.addEventListener('click', function (evt) {
 	paginator();
 });
 
-var paginator = function () {
-	for (var j = pagination.m*(pagination.i-1); j < pagination.m*pagination.i && j < pagination.mass.length; j++) {
-		pagination.mass[j].style.display = '';
-	}
-	console.log(j);
-
-	next.classList.add('visualy-hidden');
-	prev.classList.add('visualy-hidden');
-
-	if (j < pagination.mass.length) {
-		next.classList.remove('visualy-hidden');
-	};
-
-	if (pagination.i - 1 > 0) {
-		prev.classList.remove('visualy-hidden');
-	};
-
-};
-
+//Получаем введенные значения
+//Прячем все элементы на странице
+//Сравниваем полученные значения с data-атрибутами элементов
+//Запускаем пагинацию под полученынне элементы
 var main = function () {
 	var sortValues = [];
+
 	sortValues = getSortValue(optionValue);
 	removeStyle();
 	test(sortValues);
 	paginator();
-
 };
 main();

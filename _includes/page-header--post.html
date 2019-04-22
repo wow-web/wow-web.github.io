@@ -2,39 +2,23 @@
 
 	<ul class="catalog-header__list slider">
 
-{% if page.next == nil %}
-		<li class="slider__item slider__item--left" style="background-color: #e1e1e1;">
-				<span class="visualy-hidden">Фото предыдущего объекта</span>
-		</li>
-{% else %}
-		<li class="slider__item slider__item--left" style="background-image: url({{ page.next.image}});">
+		<li class="slider__item slider__item--left">
 			<span class="visualy-hidden">Фото предыдущего объекта</span>
 		</li>
-{% endif %}
 
-		<li class="slider__item slider__item--center" style="background-image: url({{ page.image }});">
+		<li class="slider__item slider__item--center">
 			<span class="visualy-hidden">Фото текущего объекта</span>
 		</li>
 
-{% if page.previous == nil %}
-		<li class="slider__item slider__item--left" style="background-color: #e1e1e1;">
-				<span class="visualy-hidden">Фото следующего объекта</span>
-		</li>
-{% else %}
-		<li class="slider__item slider__item--right" style="background-image: url({{ page.previous.image }});">
+		<li class="slider__item slider__item--right">
 			<span class="visualy-hidden">Фото слудующего объекта</span>
 		</li>
-{% endif %}
 
 	</ul>
 
 	<ul class="catalog-header__navigation toggle">
-
-{% if page.next == nil %}
-<li class="toggle__item toggle__item--right"></li>
-		{% else %}
 		<li class="toggle__item toggle__item--right">
-			<a class="toggle__link" href="{{ page.next.url }}">
+			<span class="toggle__link">
 				<span class="visualy-hidden">Следующий объект</span>
 				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 				 width="30" height="30" viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve">
@@ -47,15 +31,11 @@
 						</g>
 					</g>
 				</svg>
-			</a>
+			</span>
 		</li>
-{% endif %}
 
-{% if page.previous == nil %}
-	<li class="toggle__item toggle__item--left"></li>
-		{% else %}
 		<li class="toggle__item toggle__item--left">
-			<a class="toggle__link" href="{{ page.previous.url }}">
+			<span class="toggle__link">
 				<span class="visualy-hidden">Предыдущий объект</span>
 				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 				 width="30" height="30" viewBox="0 0 492.004 492.004" style="enable-background:new 0 0 492.004 492.004;" xml:space="preserve">
@@ -68,10 +48,9 @@
 						</g>
 					</g>
 				</svg>
-			</a>
+			</span>
 		</li>
 
-{% endif %}
 	</ul>
 
 </header>
