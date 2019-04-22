@@ -33,6 +33,7 @@ var openPopup = function() {
 		number.focus();
 	}
 	else {
+		console.log(name);
 		name.focus();
 	};
 
