@@ -26,7 +26,7 @@ var name = popup.querySelector('[name=modal-name]');
 var number = popup.querySelector('[name=modal-number]');
 
 var openPopup = function() {
-	popup.classList.add('modal--show');3
+	popup.classList.add('modal--show');
 
 	if (storage) {
 		name.value = storage;
