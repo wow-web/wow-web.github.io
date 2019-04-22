@@ -26,7 +26,7 @@ var popupClose = document.querySelector('.modal__button--close');
 var form = popup.querySelector('form');
 var name = popup.querySelector('.modal__name');
 var number = popup.querySelector('.madal__number');
-
+console.log(name);
 var openPopup = function() {
 	popup.classList.add('modal--show');
 
@@ -35,6 +35,7 @@ var openPopup = function() {
 		number.focus();
 	}
 	else {
+		console.log(name);
 		name.focus();
 	};
 
