@@ -22,8 +22,8 @@ var popup = document.querySelector('.modal');
 var popupOpen = document.querySelector('.top-line__button');
 var popupClose = document.querySelector('.modal__button--close');
 var form = popup.querySelector('form');
-var name = popup.querySelector('[name=modal-name]');
-var number = popup.querySelector('[name=modal-number]');
+var name = popup.querySelector('.modal__name');
+var number = popup.querySelector('.madal__number');
 
 var openPopup = function() {
 	popup.classList.add('modal--show');

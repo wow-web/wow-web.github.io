@@ -1,21 +1,66 @@
 <section class="modal">
 	<div class="wrapper">
+		<style>
+			.modal form{
+				padding-top: 50px;
+				padding-bottom: 50px;
+			}
+			.modal p{
+				padding-right: 20%;
+				padding-left: 20%;
+			}
+			.modal input{
+				height: 25px;
+				margin-left: 15px;
+				padding-right: 10px;
+				padding-left: 10px;
+				border: 1px solid #222;
+				border-radius: 15px;
+			}
+			.modal button{
+				margin-left: 20%;
+				width: 150px;
+				height: 50px;
+				margin-bottom: 10px;
+				border: none;
+				border-radius: 25px;
+				background-color: #222;
+				color: #fff;
+			}
+			.modal__button--close{
+				position: relative;
+				border: 1px solid #222;
+				background-color: transparent;
+			}
+			.modal__button--close::after{
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-image: url(img/icons/close-menu.svg);
+				background-size: contain;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+		</style>
 
-			<form method="post">
-					<p>
-						<label for="modal__name">Ваше имя</label>
-						<input type="text" name="modal-name" id="modal__name">
-					</p>
-					<p>
-						<label for="modal__number">Ваш телефон</label>
-						<input type="text" name="modal-number" id="modal__number">
-					</p>
-					<button type="submit">Заказать звонок</button>
-				</form>
-		
-				<button class="modal__button modal__button--close" type="button">
-					<span class="visualy-hidden">Закрыть модальное окно</span>
-				</button>
+		<form method="post">
+			<p>
+				<label for="modal__name">Ваше имя</label>
+				<input type="text" name="modal-name" id="modal__name" class="modal__name">
+			</p>
+			<p>
+				<label for="modal__number">Ваш телефон</label>
+				<input type="text" name="modal-number" id="modal__number" class="modal__name">
+			</p>
+			<button type="submit">Заказать звонок</button>
+		</form>
+	
+		<button class="modal__button modal__button--close" type="button">
+			<span class="visualy-hidden">Закрыть модальное окно</span>
+		</button>
 
 	</div>
 
