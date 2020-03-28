@@ -35,7 +35,8 @@
             <form class="page-main__calculation" method="POST" action="send.php">
                 <p>Просто оставьте номер телефона и мы произведем расчет за Вас.</p>
                 <div class="page-main__input">
-                    <input type="tel" name="phone">
+                    <span class="icon"></span>
+                    <input id="phone" type="tel" name="phone" placeholder="+7 ___ ___ ____" required="">
                     <button type="submit"><span class="icon"></span><span class="visually-hidden">Отправить</span></button>
                 </div>
             </form>
@@ -49,10 +50,10 @@
         </div>
     </main>
 
+	<script src="js/scripts.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/maskedinput/jquery.maskedinput.js"></script>
-	<script src="js/modal-send.js"></script>
 	<script src="js/mask.js"></script>
-	<script src="js/scripts.min.js"></script>
+	<script src="js/modal-send.js"></script>
 </body>
 </html>
