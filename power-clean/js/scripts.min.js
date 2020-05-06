@@ -48,7 +48,6 @@ $('.ask__accordion li h3').each(function(index, e) {
 $('.open-modal').click(function(e) {
     e.preventDefault();
     $('.popup').addClass('popup--active');
-
     $('.popup__close').click(function(e) {
         e.preventDefault();
         $('.popup').removeClass('popup--active');

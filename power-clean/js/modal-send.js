@@ -12,21 +12,12 @@ $('form').on('submit', function(evt) {
 			success: function(t) {
 				//Success
 				if (t == 1) {
-                    $('.popup').addClass('popup--active');
-
-					$('.popup__form').slideUp(500, function() { 
-						$('input, textarea', $form).val(''); 
-					}); 
-					
-                    $('.popup__success').slideDown(500);
-                    
-                    $('.popup__close').click(function(e) {
-                        e.preventDefault();
-                        $('.popup').removeClass('popup--active');
-                    });
+                    $('.popup').removeClass('popup--active');
+                    $('input, textarea', $form).val('');
+                    $('.success').css('display', '');
                 
-                    $('.popup__wrapper').click(function() {
-                        $('.popup').removeClass('popup--active');
+                    $(document).click(function() {
+                        $('.success').css('display', 'none');
                     });
 					
 					$form.addClass('successful');
