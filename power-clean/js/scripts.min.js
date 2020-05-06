@@ -101,5 +101,6 @@ var fixedBlock = function(first, second, img) {
 
 if (document.documentElement.clientWidth > 1200) {
     fixedBlock('.one', '.second', '1.png');
-    fixedBlock('.two', '.offer__wrapper', '2.png');
+    fixedBlock('.two', '.third', '2.png');
+    fixedBlock('.three', '.offer__wrapper', '3.png');
 }
