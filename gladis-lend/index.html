@@ -43,7 +43,7 @@
         <div class="header-content__offer">
             <p class="header-content__offer-descr">Рассчитаем стоимость по Вашему проекту</p>
             <div class="header-content__wrapper">
-                <button type="button" class="header-content__btn button"><span>рассчитать стоимость</span></button>
+                <button type="button" class="header-content__btn button open-calc"><span>рассчитать стоимость</span></button>
                 <span class="header-content__present">Эскиз в подарок</span>
             </div>
         </div>
@@ -338,8 +338,8 @@
                 </ul>
             </div>
             <div class="present__btns">
-                <button class="present__calc button" type="button"><span>рассчитать цену конструкции</span></button>
-                <button class="present__call" type="button">Вызвать замерщика</button>
+                <button class="present__calc button open-calc" type="button"><span>рассчитать цену конструкции</span></button>
+                <button class="present__call open-master" type="button">Вызвать замерщика</button>
             </div>
         </div>
     </div>
@@ -545,8 +545,8 @@
                 </ul>
             </div>
             <div class="present__btns">
-                <button class="present__calc button" type="button"><span>рассчитать цену конструкции</span></button>
-                <button class="present__call" type="button">Вызвать замерщика</button>
+                <button class="present__calc button open-calc" type="button"><span>рассчитать цену конструкции</span></button>
+                <button class="present__call open-master" type="button">Вызвать замерщика</button>
             </div>
         </div>
     </div>
@@ -965,6 +965,73 @@
             <button class="form__button button" type="submit">Хочу эскиз</button>
         </form>
         <p class="form__pers">Нажимая на кнопку, вы даете согласие на обработку персональных данных</p>
+    </div>
+</section>
+
+<section class="modal modal--calc">
+    <div class="modal__wrapper"></div>
+    <div class="modal__content">
+        <form class="modal__form" action="" method="POST">
+            <h3 class="modal__title">Рассчитать цену конструкции</h3>
+            <input type="hidden" name="modalTitle" value="Рассчитать цену конструкции">
+            <div class="modal__answers">
+                <div class="modal__input-wrapper">
+                    <input class="test__input" type="text" name="modalName" placeholder="Введите ваше имя" required>
+                </div>
+                <div class="modal__input-wrapper">
+                    <input class="test__input" type="tel" name="modalPhone" placeholder="Ваш телефон" required>
+                </div>
+            </div>
+            <button class="modal__btn button" type="submit">Отправить</button>
+        </form>
+        <button title="Close (Esc)" type="button" class="modal__close">×</button>
+    </div>
+</section>
+
+<section class="modal modal--call">
+    <div class="modal__wrapper"></div>
+    <div class="modal__content">
+        <form class="modal__form" action="" method="POST">
+            <h3 class="modal__title">Связаться с менеджером</h3>
+            <input type="hidden" name="modalTitle" value="Связаться с менеджером">
+            <div class="modal__answers">
+                <div class="modal__input-wrapper">
+                    <input class="test__input" type="text" name="modalName" placeholder="Введите ваше имя" required>
+                </div>
+                <div class="modal__input-wrapper">
+                    <input class="test__input" type="tel" name="modalPhone" placeholder="Ваш телефон" required>
+                </div>
+            </div>
+            <button class="modal__btn button" type="submit">Отправить</button>
+        </form>
+        <button title="Close (Esc)" type="button" class="modal__close">×</button>
+    </div>
+</section>
+
+<section class="modal modal--master">
+    <div class="modal__wrapper"></div>
+    <div class="modal__content">
+        <form class="modal__form" action="" method="POST">
+            <h3 class="modal__title">Вызвать замерщика</h3>
+            <input type="hidden" name="modalTitle" value="Вызвать замерщика">
+            <div class="modal__answers">
+                <div class="modal__input-wrapper">
+                    <input class="test__input" type="text" name="modalName" placeholder="Введите ваше имя" required>
+                </div>
+                <div class="modal__input-wrapper">
+                    <input class="test__input" type="tel" name="modalPhone" placeholder="Ваш телефон" required>
+                </div>
+            </div>
+            <button class="modal__btn button" type="submit">Отправить</button>
+        </form>
+        <button title="Close (Esc)" type="button" class="modal__close">×</button>
+    </div>
+</section>
+
+<section class="success" style="display:none;">
+    <div class="success__content">
+        <h2 class="success__title">Спасибо! Мы получили Ваши данные.<br>В ближайшее время менеджер с Вами свяжется</h2>
+        <button title="Close (Esc)" type="button" class="success__close">×</button>
     </div>
 </section>
 
