@@ -1,13 +1,15 @@
-<?php    
-	$name = $_POST['modalName'];
-	$name = htmlspecialchars($name);
-	$name = urldecode($name);
-    $name = trim($name);
+<?php
+    if ($name = $_POST['formName']) {
+        $name = $_POST['formName'];
+        $name = htmlspecialchars($name);
+        $name = urldecode($name);
+        $name = trim($name);
+    }
 
-    $phone = $_POST['modalPhone'];
-    $phone = htmlspecialchars($phone);
-    $phone = urldecode($phone);
-    $phone = trim($phone);
+    $email = $_POST['formEmail'];
+    $email = htmlspecialchars($email);
+    $email = urldecode($email);
+    $email = trim($email);
 
 	//
 	//
@@ -38,9 +40,13 @@
 				@media only screen and (max-width:600px) {.st-br { padding-left:10px!important; padding-right:10px!important } p, ul li, ol li, a { font-size:16px!important; line-height:150%!important } h1 { font-size:28px!important; text-align:center; line-height:120%!important } h2 { font-size:24px!important; text-align:center; line-height:120%!important } h3 { font-size:20px!important; text-align:center; line-height:120%!important } h1 a { font-size:28px!important; text-align:center } h2 a { font-size:24px!important; text-align:center } h3 a { font-size:20px!important; text-align:center } *[class="gmail-fix"] { display:none!important } }
 			</style>
 		</head>
-		<body style="width:100%;font-family:arial, helvetica, sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Margin:0;">
-            <p>Имя: <span>'. $name .'</span></p>
-            <p>Телефон: <span>'. $phone .'</span></p>
+		<body style="width:100%;font-family:arial, helvetica, sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Margin:0;">';
+        if ($name = $_POST['formName']) {
+            $message .='<p>Имя: <span>'. $name .'</span></p>'
+        }
+
+        $message .='
+            <p>E-mail: <span>'. $email .'</span></p>
 		</body>
 	</html>
 	';
