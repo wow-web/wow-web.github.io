@@ -1,12 +1,26 @@
-<?php  
-    if ($_POST['formName']) {
-        $name = $_POST['formName'];
-        $name = htmlspecialchars($name);
-        $name = urldecode($name);
-        $name = trim($name);
-    }
+<?php
 
-    $phone = $_POST['formPhone'];
+    $title1 = $_POST['title1'];
+    $title1 = htmlspecialchars($title1);
+    $title1 = urldecode($title1);
+    $title1 = trim($title1);
+
+    $answer1 = $_POST['q1'];
+    $answer1 = htmlspecialchars($answer1);
+    $answer1 = urldecode($answer1);
+    $answer1 = trim($answer1);
+
+    $title2 = $_POST['title2'];
+    $title2 = htmlspecialchars($title2);
+    $title2 = urldecode($title2);
+    $title2 = trim($title2);
+
+    $answer2 = $_POST['q2'];
+    $answer2 = htmlspecialchars($answer2);
+    $answer2 = urldecode($answer2);
+    $answer2 = trim($answer2);
+
+    $phone = $_POST['q3'];
     $phone = htmlspecialchars($phone);
     $phone = urldecode($phone);
     $phone = trim($phone);
@@ -19,7 +33,7 @@
 	$to = 'berdichevskayaya@gmail.com';
 
 	// содержание письма
-	$subject = 'Заявка с сайта';
+	$subject = 'Результаты квиза';
 	$message = '
 	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 	<html style="width:100%;font-family:arial,helvetica,sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Margin:0;">
@@ -29,7 +43,7 @@
 			<meta name="x-apple-disable-message-reformatting">
 			<meta http-equiv="X-UA-Compatible" content="IE=edge">
 			<meta name="format-detection" content="telephone=no">
-			<title>Заявка с сайта</title>
+			<title>Результаты квиза</title>
 			<!--[if (mso 16)]>
 				<style type="text/css">
 				a {text-decoration: none;}
@@ -40,13 +54,9 @@
 				@media only screen and (max-width:600px) {.st-br { padding-left:10px!important; padding-right:10px!important } p, ul li, ol li, a { font-size:16px!important; line-height:150%!important } h1 { font-size:28px!important; text-align:center; line-height:120%!important } h2 { font-size:24px!important; text-align:center; line-height:120%!important } h3 { font-size:20px!important; text-align:center; line-height:120%!important } h1 a { font-size:28px!important; text-align:center } h2 a { font-size:24px!important; text-align:center } h3 a { font-size:20px!important; text-align:center } *[class="gmail-fix"] { display:none!important } }
 			</style>
 		</head>
-		<body style="width:100%;font-family:arial, helvetica, sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Margin:0;">';
-
-        if ($_POST['formName']) {
-            $message .= '<p>Имя: <span>'. $name .'</span></p>';
-        }
-
-        $message .='
+		<body style="width:100%;font-family:arial, helvetica, sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Margin:0;">
+            <p>'. $title1 .' <br>Ответ: '. $answer1 .'</p>
+            <p>'. $title2 .' <br>Ответ: '. $answer2 .'</p>
             <p>Телефон: <span>'. $phone .'</span></p>
 		</body>
 	</html>
