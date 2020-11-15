@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/libs/owl-carousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" href="assets/libs/fancybox/jquery.fancybox.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css?v=2">
     <script src="https://api-maps.yandex.ru/2.1?apikey=11b9cc39-5bfa-4725-aa96-5f5897fa0327&lang=ru_RU"></script>
     <title>Все, что по вашему мнению является старым, может оказаться антикварным</title>
 </head>
@@ -378,10 +378,11 @@
     <section class="form-first container">
     <div class="form-first__wrapper">
         <h2 class="form-first__title">Решили продать или оценить антиквариат?</h2>
-        <form action="" method="POST">
+        <form action="" method="POST" enctype="multipart/form-data">
             <input class="form-first__input input" type="text" name="formName" placeholder="Ваше имя" required>
             <input class="form-first__input input" type="tel" name="formPhone" placeholder="Ваш номер телефона" required>
-            
+            <input class="form-first__file" type="file" name="formfile" id="form-file" multiple>
+            <label class="form-first__file-label" for="form-file">Загрузите до 5 фото</label>
             <button class="form-first__btn button" type="submit">Получить бесплатную оценку</button>
             <p class="form-first__conf">Нажимая на кнопку, вы даете согласие на обработку персональных данных. Мы 100% гарантируем конфиденциальность и безопасность.</p>
         </form>
