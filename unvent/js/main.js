@@ -1,0 +1,1 @@
+$(".top-line__menu-btn").click(function(){$("body").addClass("open-menu")}),$(".menu__close-btn").click(function(){$("body").removeClass("open-menu")});var licensSlider=$(".licenses__slider").owlCarousel({items:2,margin:6,nav:!0,dots:!1,responsive:{410:{items:3,margin:10}}});
