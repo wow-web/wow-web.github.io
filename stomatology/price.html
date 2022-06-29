@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная</title>
+    <link rel="stylesheet" href="assets/libs/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/libs/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/libs/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body class="">
+
+    <div class="body-icon"></div>
+
+    <header class="header" id="header">
+    <div class="header__top-line top-line">
+        <div class="top-line__absolute">
+            <div class="top-line__wrapper">
+                <div class="container">
+                    <a class="top-line__logo" href="/"><img src="/assets/img/logo.png" width="170" height="55" alt=""></a>
+
+                    <div class="top-line__info info" data-da=".menu__wrapper,1024,last">
+                        <div class="info__item">
+                            <b class="info__title">Адрес</b>
+                            <p class="info__content info__content--address">Космонавта Беляева, 8</p>
+                        </div>
+                        <div class="info__item">
+                            <b class="info__title">Режим работы</b>
+                            <p class="info__content info__content--time">Пн-Пт 09:00-21:00</p>
+                        </div>
+                        <div class="info__item">
+                            <b class="info__title">Телефон</b>
+                            <p class="info__content info__content--tel"><a href="+73422266662">+7 (342) 226-66-62</a></p>
+                        </div>
+                    </div>
+
+                    <button class="top-line__mnu-btn" type="button">
+                        <span class="text">Меню</span>
+                        <span class="burger">
+                            <span></span>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="menu" style="display:none;">
+                    <div class="container menu__wrapper">
+                        <ul class="menu__list">
+                            <li><a href="/doctors.html">Специалисты</a></li>
+                            <li><a href="/about.html">О нас</a></li>
+                            <li><a href="/price.html">Прайс</a></li>
+                            <li><a href="/contacts.html">Контакты</a></li>
+                            <li><a href="/blog.html">Блог</a></li>
+                            <li class="can-open"><a href="#">Услуги</a></li>
+                        </ul>
+
+                        <div class="sub-menu">
+    <div class="row sub-menu__wrapper">
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Эстетика</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Виниры</a></li>
+                
+                <li><a href="/page-1.html">Брекеты на зубы</a></li>
+                
+                <li><a href="/page-1.html">Отбеливание зубов</a></li>
+                
+                <li><a href="/page-1.html">Реставрация зуба (нарастить зуб)</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Коронки</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Коронки на зуб</a></li>
+                
+                <li><a href="/page-1.html">Металлокерамическая коронка</a></li>
+                
+                <li><a href="/page-1.html">Керамическая коронка</a></li>
+                
+                <li><a href="/page-1.html">Металлическая коронка</a></li>
+                
+                <li><a href="/page-1.html">Металлопластмассовая коронка</a></li>
+                
+                <li><a href="/page-1.html">Циркониевые коронки</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Протезирование</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Протезирование зубов</a></li>
+                
+                <li><a href="/page-1.html">Съемные и частично-съемные протезы</a></li>
+                
+                <li><a href="/page-1.html">Мостовидные зубные протезы</a></li>
+                
+                <li><a href="/page-1.html">Бюгельные протезы</a></li>
+                
+                <li><a href="/page-1.html">Капы на зубы</a></li>
+                
+                <li><a href="/page-1.html">Протез бабочка</a></li>
+                
+                <li><a href="/page-1.html">Протезирование на базальных имплантах</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Гигиена, уход, защита</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Чистка зубов ультразвуком</a></li>
+                
+                <li><a href="/page-1.html">Фторирование зубов</a></li>
+                
+                <li><a href="/page-1.html">Герметизация фиссур</a></li>
+                
+                <li><a href="/page-1.html">Рентген зубов</a></li>
+                
+                <li><a href="/page-1.html">Установка пломбы</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Лечение</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Лечение зубов</a></li>
+                
+                <li><a href="/page-1.html">Лечение кариеса</a></li>
+                
+                <li><a href="/page-1.html">Лечение пульпита зуба</a></li>
+                
+                <li><a href="/page-1.html">Лечение периодонтита</a></li>
+                
+                <li><a href="/page-1.html">Клиновидный дефект зуба</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Удаление и хирургия</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Удаление зуба</a></li>
+                
+                <li><a href="/page-1.html">Имплантация зубов</a></li>
+                
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header__menu-line menu-line container">
+        <ul class="menu-line__list">
+            <li><a href="/doctors.html">Специалисты</a></li>
+            <li><a href="/about.html">О нас</a></li>
+            <li><a href="/price.html">Прайс</a></li>
+            <li><a href="/contacts.html">Контакты</a></li>
+            <li><a href="/blog.html">Блог</a></li>
+            <li class="can-open">
+                <a href="#">Услуги</a>
+                <div class="menu-line__sub-menu">
+                    <div class="container">
+                        <div class="sub-menu">
+    <div class="row sub-menu__wrapper">
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Эстетика</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Виниры</a></li>
+                
+                <li><a href="/page-1.html">Брекеты на зубы</a></li>
+                
+                <li><a href="/page-1.html">Отбеливание зубов</a></li>
+                
+                <li><a href="/page-1.html">Реставрация зуба (нарастить зуб)</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Коронки</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Коронки на зуб</a></li>
+                
+                <li><a href="/page-1.html">Металлокерамическая коронка</a></li>
+                
+                <li><a href="/page-1.html">Керамическая коронка</a></li>
+                
+                <li><a href="/page-1.html">Металлическая коронка</a></li>
+                
+                <li><a href="/page-1.html">Металлопластмассовая коронка</a></li>
+                
+                <li><a href="/page-1.html">Циркониевые коронки</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Протезирование</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Протезирование зубов</a></li>
+                
+                <li><a href="/page-1.html">Съемные и частично-съемные протезы</a></li>
+                
+                <li><a href="/page-1.html">Мостовидные зубные протезы</a></li>
+                
+                <li><a href="/page-1.html">Бюгельные протезы</a></li>
+                
+                <li><a href="/page-1.html">Капы на зубы</a></li>
+                
+                <li><a href="/page-1.html">Протез бабочка</a></li>
+                
+                <li><a href="/page-1.html">Протезирование на базальных имплантах</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Гигиена, уход, защита</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Чистка зубов ультразвуком</a></li>
+                
+                <li><a href="/page-1.html">Фторирование зубов</a></li>
+                
+                <li><a href="/page-1.html">Герметизация фиссур</a></li>
+                
+                <li><a href="/page-1.html">Рентген зубов</a></li>
+                
+                <li><a href="/page-1.html">Установка пломбы</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Лечение</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Лечение зубов</a></li>
+                
+                <li><a href="/page-1.html">Лечение кариеса</a></li>
+                
+                <li><a href="/page-1.html">Лечение пульпита зуба</a></li>
+                
+                <li><a href="/page-1.html">Лечение периодонтита</a></li>
+                
+                <li><a href="/page-1.html">Клиновидный дефект зуба</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Удаление и хирургия</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Удаление зуба</a></li>
+                
+                <li><a href="/page-1.html">Имплантация зубов</a></li>
+                
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</header>
+
+
+    <section class="first-block first-block--type3 container">
+        <div class="row">
+            <div class="col col-12 col-lg-6">
+                <p class="first-block__img" data-da=".first-block__content,1024,last"><img src="/assets/img/main-3.png" alt=""></p>
+            </div>
+            <div class="col col-12 col-lg-6">
+                <div class="first-block__content">
+                    <h1 class="first-block__title">ИМЕНИННИКАМ ДАРИМ СКИДКУ 50%</h1>
+                    <p class="first-block__descr">Скидка действует на определённые услуги в течении 1 недели до и после дня рождения!</p>
+
+                    <div class="first-block__cost cost">
+                        <p class="cost__title">Методы оплаты:</p>
+                        <ul class="cost__list">
+                            <li class="cost__item"><img src="/assets/img/pay-visa.svg" alt=""></li>
+                            <li class="cost__item"><img src="/assets/img/pay-mc.svg" alt=""></li>
+                            <li class="cost__item"><img src="/assets/img/pay-mir.svg" alt=""></li>
+                            <li class="cost__item"><img src="/assets/img/pay-money.svg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="form form--type3 section section--mob-accent">
+        <form class="container" method="POST">
+            <h3 class="form__title h3">Оставьте Ваши данные и получите 1000 бонусных рублей*</h3>
+
+            <div class="row form__inputs">
+                <div class="col col-12 col-lg-4 form__input">
+                    <label class="input">
+                        <input type="text" placeholder="Имя*" required>
+                    </label>
+                </div>
+                <div class="col col-12 col-lg-4 form__input">
+                    <label class="input">
+                        <input type="tel" placeholder="Мобильный телефон*" required>
+                    </label>
+                </div>
+            </div>
+
+            <div class="row form__text">
+                <div class="col col-12 col-lg-8">
+                    <p>*бонусы зачисляются на счет Вашей бонусной карты. Акция действует только для новых клиентов или если с момента последнего посещения клиники прошло более 6 мес. Бонусными 1000 руб. можно оплатить не более 15% от общей суммы лечения</p>
+                </div>
+            </div>
+
+            <div class="row form__bottom">
+                <div class="col col-12 col-lg-4">
+                    <p>Нажимая на кнопку «Записаться на приём» Вы даётё своё согласие с условиями обработки персональных данных</p>
+                </div>
+                <div class="col col-12 col-lg-4">
+                    <button class="button button--center button--full" type="submit">Записаться на прием</button>
+                </div>
+            </div>
+
+            <p class="form__img form__img--3"><img src="/assets/img/sect-7.png" alt=""></p>
+        </form>
+    </section>
+
+    <section class="prices section container">
+        <div class="section__header">
+            <h2 class="section__title h2">НАПРАВЛЕНИЯ</h2>
+        </div>
+
+        <ul class="prices__links">
+            <li><button class="active" type="button">Для самых маленьких</button></li>
+            <li><button type="button">Красивая улыбка</button></li>
+            <li><button type="button">Профилактика</button></li>
+            <li><button type="button">Лечение зубов</button></li>
+            <li><button type="button">Хирургия</button></li>
+            <li><button type="button">Ортодонтия</button></li>
+            <li><button type="button">Протезирование</button></li>
+        </ul>
+
+        <div class="prices__slider price-slider owl-carousel owl-theme">
+            <div class="price-slider__item">
+                <h4 class="price-slider__title">Эстетика улыбки</h4>
+                <p class="price-slider__text">Отбеливание, Виниры, Люминиры, Реставрация зуба (наращивание), Замена пломбы</p>
+                <button class="price-slider__btn button button--transparent" type="button">
+                    Перейти к ценам
+                    <svg><use xlink:href="assets/img/icons/sprite.svg#arrow-right--accent"></use></svg>
+                </button>
+            </div>
+            <div class="price-slider__item">
+                <h4 class="price-slider__title">Эстетика улыбки</h4>
+                <p class="price-slider__text">Отбеливание, Виниры, Люминиры, Реставрация зуба (наращивание), Замена пломбы</p>
+                <button class="price-slider__btn button button--transparent" type="button">
+                    Перейти к ценам
+                    <svg><use xlink:href="assets/img/icons/sprite.svg#arrow-right--accent"></use></svg>
+                </button>
+            </div>
+            <div class="price-slider__item">
+                <h4 class="price-slider__title">Эстетика улыбки</h4>
+                <p class="price-slider__text">Отбеливание, Виниры, Люминиры, Реставрация зуба (наращивание), Замена пломбы</p>
+                <button class="price-slider__btn button button--transparent" type="button">
+                    Перейти к ценам
+                    <svg><use xlink:href="assets/img/icons/sprite.svg#arrow-right--accent"></use></svg>
+                </button>
+            </div>
+            <div class="price-slider__item">
+                <h4 class="price-slider__title">Эстетика улыбки</h4>
+                <p class="price-slider__text">Отбеливание, Виниры, Люминиры, Реставрация зуба (наращивание), Замена пломбы</p>
+                <button class="price-slider__btn button button--transparent" type="button">
+                    Перейти к ценам
+                    <svg><use xlink:href="assets/img/icons/sprite.svg#arrow-right--accent"></use></svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="prices__table">
+            
+            <div class="prices__item">
+                <h3 class="prices__title">Услуги врача стоматолога-терапевта</h3>
+                <div class="prices__block">
+                    
+                    <div class="prices__row">
+                        <p class="prices__name">Первичный прием врача стоматолога-терапевта</p>
+                        <p class="prices__cost">500 руб.</p>
+                    </div>
+                    
+                    <div class="prices__row">
+                        <p class="prices__name">Лечение кариеса </p>
+                        <p class="prices__cost"> от 4 350 руб.</p>
+                    </div>
+                    
+                    <div class="prices__row">
+                        <p class="prices__name">Лечение пульпита, периодонтита одноканального зуба (без восстановления) </p>
+                        <p class="prices__cost">от 8 650 руб.</p>
+                    </div>
+                    
+                    <div class="prices__row">
+                        <p class="prices__name">Лечение пульпита, периодонтита двухканального зуба (без восстановления)</p>
+                        <p class="prices__cost">от 10 850 руб.</p>
+                    </div>
+                    
+                    <div class="prices__row">
+                        <p class="prices__name">Лечение пульпита, периодонтита трехканального зуба (без восстановления)</p>
+                        <p class="prices__cost"> от 12 650 руб.</p>
+                    </div>
+                    
+                    <div class="prices__row">
+                        <p class="prices__name">Лечение пульпита, периодонтита четырехканального зуба (без восстановления) </p>
+                        <p class="prices__cost">от 14 450 руб.</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="prices__item">
+                <h3 class="prices__title">Услуги врача стоматолога-ортопеда</h3>
+                <div class="prices__block">
+                    
+                    <div class="prices__row">
+                        <p class="prices__name">Гибкий протез DEFLEX </p>
+                        <p class="prices__cost">от 21 900 руб.</p>
+                    </div>
+                    
+                    <div class="prices__row">
+                        <p class="prices__name">Протезирование съемными бюгельными протезами</p>
+                        <p class="prices__cost">от 35 000 руб.</p>
+                    </div>
+                    
+                    <div class="prices__row">
+                        <p class="prices__name">Восстановление зуба коронкой металлокерамической</p>
+                        <p class="prices__cost">от 6500 руб.</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="prices__item">
+                <h3 class="prices__title">Услуги врача стоматолога-хирурга</h3>
+                <div class="prices__block">
+                    
+                    <div class="prices__row">
+                        <p class="prices__name">Удаление зуба</p>
+                        <p class="prices__cost">от 2 450 руб.</p>
+                    </div>
+                    
+                    <div class="prices__row">
+                        <p class="prices__name">Установка имплантов</p>
+                        <p class="prices__cost">от 13 650 руб.</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="prices__item">
+                <h3 class="prices__title">Услуги врача — стоматолога ортодонта</h3>
+                <div class="prices__block">
+                    
+                    <div class="prices__row">
+                        <p class="prices__name">Ортодонтическая коррекция с применением брекет-систем 1 челюсть</p>
+                        <p class="prices__cost">от 26 000 руб.</p>
+                    </div>
+                    
+                    <div class="prices__row">
+                        <p class="prices__name">Снятие брекет системы 1 челюсть (с фиксацией ретейнера)</p>
+                        <p class="prices__cost"> от 10 000 руб.</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="prices__item">
+                <h3 class="prices__title">Профгигиена</h3>
+                <div class="prices__block">
+                    
+                    <div class="prices__row">
+                        <p class="prices__name">Комплексная профгигиена полости рта</p>
+                        <p class="prices__cost">3 000 руб.</p>
+                    </div>
+                    
+                    <div class="prices__row">
+                        <p class="prices__name">Профгигиена 1 зуба на аппаратом AirFlow</p>
+                        <p class="prices__cost">200 руб.</p>
+                    </div>
+                    
+                    <div class="prices__row">
+                        <p class="prices__name">Профгигиена 1 зуба Ультразвуком</p>
+                        <p class="prices__cost">200 руб.</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="prices__offer">
+            <div class="row">
+                <div class="col col-12 col-lg-6">
+                    <p class="prices__accent-bg">У нас вы можете провести лечение, удаление и протезирование зубов, профессиональную гигиену полости рта, установить импланты и новейшую систему брекетов и многое другое.</p>
+                </div>
+                <div class="col col-12 col-lg-5 offset-lg-1">
+                    <p class="prices__accent-text"><b>Внимание! Стоимость лечения зависит от конкретного клинического случая и пожеланий пациента. Для определения точной стоимости лечения требуется консультация специалиста.</b></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer section section--accent">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="row">
+                    <div class="col col-12 col-lg-3 footer__left">
+                        <a class="footer__logo js-scroll-to" href="#header"><img src="/assets/img/logo.png" width="170" height="55" alt=""></a>
+
+                        <ul class="footer__soc soc-btns" data-da=".footer__top,1024,last">
+                            <li class="soc-btns__item"><a href="#"><svg><use xlink:href="assets/img/icons/sprite.svg#inst"></use></svg></a></li>
+                            <li class="soc-btns__item"><a href="#"><svg><use xlink:href="assets/img/icons/sprite.svg#yt"></use></svg></a></li>
+                            <li class="soc-btns__item"><a href="#"><svg><use xlink:href="assets/img/icons/sprite.svg#wa"></use></svg></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col col-12 col-lg-9">
+                        <div class="footer__top">
+                            <div class="footer__info info">
+                                <div class="info__item">
+                                    <b class="info__title">Адрес</b>
+                                    <p class="info__content info__content--address">Космонавта Беляева, 8</p>
+                                </div>
+                                <div class="info__item">
+                                    <b class="info__title">Режим работы</b>
+                                    <p class="info__content info__content--time">Пн-Пт 09:00-21:00</p>
+                                </div>
+                                <div class="info__item">
+                                    <b class="info__title">Телефон</b>
+                                    <p class="info__content info__content--tel"><a href="+73422266662">+7 (342) 226-66-62</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form class="footer__form form" method="POST">
+                            <div class="row">
+                                <div class="col col-12 col-lg-4 form__input">
+                                    <label class="input">
+                                        <input type="text" placeholder="Имя">
+                                    </label>
+                                </div>
+                                <div class="col col-12 col-lg-4 form__input">
+                                    <label class="input">
+                                        <input type="tel" placeholder="Мобильный телефон">
+                                    </label>
+                                </div>
+                                <div class="col col-12 col-lg-4">
+                                    <button class="footer__btn button button--center button--full" type="submit">Записаться на прием</button>
+                                </div>
+                            </div>
+                            <div class="row form__conf">
+                                <div class="col col-12">
+                                    <p>Нажимая на кнопку «Записаться на приём» Вы даётё своё согласие с условиями обработки персональных данных</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

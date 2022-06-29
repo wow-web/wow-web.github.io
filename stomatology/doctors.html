@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная</title>
+    <link rel="stylesheet" href="assets/libs/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/libs/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/libs/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body class="">
+
+    <div class="body-icon"></div>
+
+    <header class="header" id="header">
+    <div class="header__top-line top-line">
+        <div class="top-line__absolute">
+            <div class="top-line__wrapper">
+                <div class="container">
+                    <a class="top-line__logo" href="/"><img src="/assets/img/logo.png" width="170" height="55" alt=""></a>
+
+                    <div class="top-line__info info" data-da=".menu__wrapper,1024,last">
+                        <div class="info__item">
+                            <b class="info__title">Адрес</b>
+                            <p class="info__content info__content--address">Космонавта Беляева, 8</p>
+                        </div>
+                        <div class="info__item">
+                            <b class="info__title">Режим работы</b>
+                            <p class="info__content info__content--time">Пн-Пт 09:00-21:00</p>
+                        </div>
+                        <div class="info__item">
+                            <b class="info__title">Телефон</b>
+                            <p class="info__content info__content--tel"><a href="+73422266662">+7 (342) 226-66-62</a></p>
+                        </div>
+                    </div>
+
+                    <button class="top-line__mnu-btn" type="button">
+                        <span class="text">Меню</span>
+                        <span class="burger">
+                            <span></span>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="menu" style="display:none;">
+                    <div class="container menu__wrapper">
+                        <ul class="menu__list">
+                            <li><a href="/doctors.html">Специалисты</a></li>
+                            <li><a href="/about.html">О нас</a></li>
+                            <li><a href="/price.html">Прайс</a></li>
+                            <li><a href="/contacts.html">Контакты</a></li>
+                            <li><a href="/blog.html">Блог</a></li>
+                            <li class="can-open"><a href="#">Услуги</a></li>
+                        </ul>
+
+                        <div class="sub-menu">
+    <div class="row sub-menu__wrapper">
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Эстетика</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Виниры</a></li>
+                
+                <li><a href="/page-1.html">Брекеты на зубы</a></li>
+                
+                <li><a href="/page-1.html">Отбеливание зубов</a></li>
+                
+                <li><a href="/page-1.html">Реставрация зуба (нарастить зуб)</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Коронки</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Коронки на зуб</a></li>
+                
+                <li><a href="/page-1.html">Металлокерамическая коронка</a></li>
+                
+                <li><a href="/page-1.html">Керамическая коронка</a></li>
+                
+                <li><a href="/page-1.html">Металлическая коронка</a></li>
+                
+                <li><a href="/page-1.html">Металлопластмассовая коронка</a></li>
+                
+                <li><a href="/page-1.html">Циркониевые коронки</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Протезирование</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Протезирование зубов</a></li>
+                
+                <li><a href="/page-1.html">Съемные и частично-съемные протезы</a></li>
+                
+                <li><a href="/page-1.html">Мостовидные зубные протезы</a></li>
+                
+                <li><a href="/page-1.html">Бюгельные протезы</a></li>
+                
+                <li><a href="/page-1.html">Капы на зубы</a></li>
+                
+                <li><a href="/page-1.html">Протез бабочка</a></li>
+                
+                <li><a href="/page-1.html">Протезирование на базальных имплантах</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Гигиена, уход, защита</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Чистка зубов ультразвуком</a></li>
+                
+                <li><a href="/page-1.html">Фторирование зубов</a></li>
+                
+                <li><a href="/page-1.html">Герметизация фиссур</a></li>
+                
+                <li><a href="/page-1.html">Рентген зубов</a></li>
+                
+                <li><a href="/page-1.html">Установка пломбы</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Лечение</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Лечение зубов</a></li>
+                
+                <li><a href="/page-1.html">Лечение кариеса</a></li>
+                
+                <li><a href="/page-1.html">Лечение пульпита зуба</a></li>
+                
+                <li><a href="/page-1.html">Лечение периодонтита</a></li>
+                
+                <li><a href="/page-1.html">Клиновидный дефект зуба</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Удаление и хирургия</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Удаление зуба</a></li>
+                
+                <li><a href="/page-1.html">Имплантация зубов</a></li>
+                
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header__menu-line menu-line container">
+        <ul class="menu-line__list">
+            <li><a href="/doctors.html">Специалисты</a></li>
+            <li><a href="/about.html">О нас</a></li>
+            <li><a href="/price.html">Прайс</a></li>
+            <li><a href="/contacts.html">Контакты</a></li>
+            <li><a href="/blog.html">Блог</a></li>
+            <li class="can-open">
+                <a href="#">Услуги</a>
+                <div class="menu-line__sub-menu">
+                    <div class="container">
+                        <div class="sub-menu">
+    <div class="row sub-menu__wrapper">
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Эстетика</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Виниры</a></li>
+                
+                <li><a href="/page-1.html">Брекеты на зубы</a></li>
+                
+                <li><a href="/page-1.html">Отбеливание зубов</a></li>
+                
+                <li><a href="/page-1.html">Реставрация зуба (нарастить зуб)</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Коронки</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Коронки на зуб</a></li>
+                
+                <li><a href="/page-1.html">Металлокерамическая коронка</a></li>
+                
+                <li><a href="/page-1.html">Керамическая коронка</a></li>
+                
+                <li><a href="/page-1.html">Металлическая коронка</a></li>
+                
+                <li><a href="/page-1.html">Металлопластмассовая коронка</a></li>
+                
+                <li><a href="/page-1.html">Циркониевые коронки</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Протезирование</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Протезирование зубов</a></li>
+                
+                <li><a href="/page-1.html">Съемные и частично-съемные протезы</a></li>
+                
+                <li><a href="/page-1.html">Мостовидные зубные протезы</a></li>
+                
+                <li><a href="/page-1.html">Бюгельные протезы</a></li>
+                
+                <li><a href="/page-1.html">Капы на зубы</a></li>
+                
+                <li><a href="/page-1.html">Протез бабочка</a></li>
+                
+                <li><a href="/page-1.html">Протезирование на базальных имплантах</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Гигиена, уход, защита</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Чистка зубов ультразвуком</a></li>
+                
+                <li><a href="/page-1.html">Фторирование зубов</a></li>
+                
+                <li><a href="/page-1.html">Герметизация фиссур</a></li>
+                
+                <li><a href="/page-1.html">Рентген зубов</a></li>
+                
+                <li><a href="/page-1.html">Установка пломбы</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Лечение</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Лечение зубов</a></li>
+                
+                <li><a href="/page-1.html">Лечение кариеса</a></li>
+                
+                <li><a href="/page-1.html">Лечение пульпита зуба</a></li>
+                
+                <li><a href="/page-1.html">Лечение периодонтита</a></li>
+                
+                <li><a href="/page-1.html">Клиновидный дефект зуба</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Удаление и хирургия</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Удаление зуба</a></li>
+                
+                <li><a href="/page-1.html">Имплантация зубов</a></li>
+                
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</header>
+
+
+    <section class="team team--type2 section container">
+        <div class="section__header">
+            <h2 class="section__title h2">СПЕЦИАЛИСТЫ</h2>
+        </div>
+
+        <div class="team__list">
+            <div class="team__row">
+                <a class="team__item open-modal">
+                    <p class="team__img">
+                        <span class="img-abs"><img src="/assets/img/team/1.png" alt=""></span>
+                    </p>
+                    <div class="team__center">
+                        <h4 class="team__name h4">Новикова Елена Владимировна</h4>
+                        <p class="team__text">Стоматолог-терапевт</p>
+                    </div>
+
+                    <button class="team__more button button--center" type="button">Подробнее о враче</button>
+                </a>
+                <a class="team__item open-modal">
+                    <p class="team__img">
+                        <span class="img-abs"><img src="/assets/img/team/2.png" alt=""></span>
+                    </p>
+                    <div class="team__center">
+                        <h4 class="team__name h4">Новикова Елена Владимировна</h4>
+                        <p class="team__text">Стоматолог-терапевт</p>
+                    </div>
+
+                    <button class="team__more button button--center" type="button">Подробнее о враче</button>
+                </a>
+                <a class="team__item open-modal">
+                    <p class="team__img">
+                        <span class="img-abs"><img src="/assets/img/team/3.png" alt=""></span>
+                    </p>
+                    <div class="team__center">
+                        <h4 class="team__name h4">Новикова Елена Владимировна</h4>
+                        <p class="team__text">Стоматолог-терапевт</p>
+                    </div>
+
+                    <button class="team__more button button--center" type="button">Подробнее о враче</button>
+                </a>
+            </div>
+            <div class="team__row">
+                <a class="team__item open-modal">
+                    <p class="team__img">
+                        <span class="img-abs"><img src="/assets/img/team/1.png" alt=""></span>
+                    </p>
+                    <div class="team__center">
+                        <h4 class="team__name h4">Новикова Елена Владимировна</h4>
+                        <p class="team__text">Стоматолог-терапевт</p>
+                    </div>
+
+                    <button class="team__more button button--center" type="button">Подробнее о враче</button>
+                </a>
+                <a class="team__item open-modal">
+                    <p class="team__img">
+                        <span class="img-abs"><img src="/assets/img/team/2.png" alt=""></span>
+                    </p>
+                    <div class="team__center">
+                        <h4 class="team__name h4">Новикова Елена Владимировна</h4>
+                        <p class="team__text">Стоматолог-терапевт</p>
+                    </div>
+
+                    <button class="team__more button button--center" type="button">Подробнее о враче</button>
+                </a>
+                <a class="team__item open-modal">
+                    <p class="team__img">
+                        <span class="img-abs"><img src="/assets/img/team/3.png" alt=""></span>
+                    </p>
+                    <div class="team__center">
+                        <h4 class="team__name h4">Новикова Елена Владимировна</h4>
+                        <p class="team__text">Стоматолог-терапевт</p>
+                    </div>
+
+                    <button class="team__more button button--center" type="button">Подробнее о враче</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="modal" style="display:none;">
+    <div class="modal__overlay">
+        <div class="modal__container">
+            <div class="modal__body">
+                <div class="modal__img-composition" data-da=".modal__overlay,1024,last">
+                    <p class="modal__img">
+                        <span class="img-abs"><img src="/assets/img/team/2.png" alt=""></span>
+                    </p>
+                </div>
+                <div class="modal__content">
+                    <div class="modal__header">
+                        <h4 class="modal__title">Новикова Елена Владимировна</h4>
+                        <p class="modal__descr">Стоматолог-терапевт</p>
+                    </div>
+
+                    <ul class="modal__text">
+                        <li>
+                            <b>Образование:</b>
+                            <p>ГОУ ВПО Пермская государственная медицинская академия им. ак. Е.А.Вагнера, Диплом ВСВ 0467602 от 25 июня 2004 г., присуждена квалификация ВРАЧ-СТОМАТОЛОГ по специальности "Стоматология".</p>
+                        </li>
+                        <li>
+                            <b>Сертификаты:</b>
+                            <p>Сертификат A № 2830111 от 01 июля 2005 года. ГОУ ВПО ПГМА им. ак. Е.А.Вагнера</p>
+                            <p>Диплом о профессиональной переподготовки ПП-I №318761 в сфере стоматологии терапевтической от 22 декабря 2008 года.</p>
+                            <p>Сертификат А № 3586117 от 22 декабря 2008 года по специальности стоматология терапевтическая. ГБОУ ВПО ПГМА им. ак. Е.А.Вагнера</p>
+                            <p>Св-во о повышении квалификации по стоматологии терапевтической от 26 октября 2013 года.</p>
+                            <p>Сертификат специалиста № 1159241751371 от 26 сентября 2018 года по специальности стоматология терапевтическая.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modal__gallery">
+                <div class="modal__slider">
+                    <div class="modal__item"><img src="/assets/img/reviews/1.jpg" alt=""></div>
+                    <div class="modal__item"><img src="/assets/img/reviews/1.jpg" alt=""></div>
+                    <div class="modal__item"><img src="/assets/img/reviews/1.jpg" alt=""></div>
+                    <div class="modal__item"><img src="/assets/img/reviews/1.jpg" alt=""></div>
+                </div>
+            </div>
+
+            <div class="modal__bottom">
+                <button class="modal__btn button button--center" type="button" data-da=".modal__content,1024,1">Записаться на прием</button>
+            </div>
+
+            <button class="modal__close" type="button" data-da=".modal__overlay,1024,last">
+                <!-- <object class="icon" data="/assets/img/icons/sprite.svg#close" type="image/svg+xml">Ваш браузер не поддерживает SVG</object> -->
+            </button>
+        </div>
+    </div>
+</section>
+
+
+    <footer class="footer section section--accent">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="row">
+                    <div class="col col-12 col-lg-3 footer__left">
+                        <a class="footer__logo js-scroll-to" href="#header"><img src="/assets/img/logo.png" width="170" height="55" alt=""></a>
+
+                        <ul class="footer__soc soc-btns" data-da=".footer__top,1024,last">
+                            <li class="soc-btns__item"><a href="#"><svg><use xlink:href="assets/img/icons/sprite.svg#inst"></use></svg></a></li>
+                            <li class="soc-btns__item"><a href="#"><svg><use xlink:href="assets/img/icons/sprite.svg#yt"></use></svg></a></li>
+                            <li class="soc-btns__item"><a href="#"><svg><use xlink:href="assets/img/icons/sprite.svg#wa"></use></svg></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col col-12 col-lg-9">
+                        <div class="footer__top">
+                            <div class="footer__info info">
+                                <div class="info__item">
+                                    <b class="info__title">Адрес</b>
+                                    <p class="info__content info__content--address">Космонавта Беляева, 8</p>
+                                </div>
+                                <div class="info__item">
+                                    <b class="info__title">Режим работы</b>
+                                    <p class="info__content info__content--time">Пн-Пт 09:00-21:00</p>
+                                </div>
+                                <div class="info__item">
+                                    <b class="info__title">Телефон</b>
+                                    <p class="info__content info__content--tel"><a href="+73422266662">+7 (342) 226-66-62</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form class="footer__form form" method="POST">
+                            <div class="row">
+                                <div class="col col-12 col-lg-4 form__input">
+                                    <label class="input">
+                                        <input type="text" placeholder="Имя">
+                                    </label>
+                                </div>
+                                <div class="col col-12 col-lg-4 form__input">
+                                    <label class="input">
+                                        <input type="tel" placeholder="Мобильный телефон">
+                                    </label>
+                                </div>
+                                <div class="col col-12 col-lg-4">
+                                    <button class="footer__btn button button--center button--full" type="submit">Записаться на прием</button>
+                                </div>
+                            </div>
+                            <div class="row form__conf">
+                                <div class="col col-12">
+                                    <p>Нажимая на кнопку «Записаться на приём» Вы даётё своё согласие с условиями обработки персональных данных</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная</title>
+    <link rel="stylesheet" href="assets/libs/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/libs/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/libs/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body class="">
+
+    <header class="header" id="header">
+    <div class="header__top-line top-line">
+        <div class="top-line__absolute">
+            <div class="top-line__wrapper">
+                <div class="container">
+                    <a class="top-line__logo" href="/"><img src="/assets/img/logo.png" width="170" height="55" alt=""></a>
+
+                    <div class="top-line__info info" data-da=".menu__wrapper,1024,last">
+                        <div class="info__item">
+                            <b class="info__title">Адрес</b>
+                            <p class="info__content info__content--address">Космонавта Беляева, 8</p>
+                        </div>
+                        <div class="info__item">
+                            <b class="info__title">Режим работы</b>
+                            <p class="info__content info__content--time">Пн-Пт 09:00-21:00</p>
+                        </div>
+                        <div class="info__item">
+                            <b class="info__title">Телефон</b>
+                            <p class="info__content info__content--tel"><a href="+73422266662">+7 (342) 226-66-62</a></p>
+                        </div>
+                    </div>
+
+                    <button class="top-line__mnu-btn" type="button">
+                        <span class="text">Меню</span>
+                        <span class="burger">
+                            <span></span>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="menu" style="display:none;">
+                    <div class="container menu__wrapper">
+                        <ul class="menu__list">
+                            <li><a href="/doctors.html">Специалисты</a></li>
+                            <li><a href="/about.html">О нас</a></li>
+                            <li><a href="/price.html">Прайс</a></li>
+                            <li><a href="/contacts.html">Контакты</a></li>
+                            <li><a href="/blog.html">Блог</a></li>
+                            <li class="can-open"><a href="#">Услуги</a></li>
+                        </ul>
+
+                        <div class="sub-menu">
+    <div class="row sub-menu__wrapper">
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Эстетика</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Виниры</a></li>
+                
+                <li><a href="/page-1.html">Брекеты на зубы</a></li>
+                
+                <li><a href="/page-1.html">Отбеливание зубов</a></li>
+                
+                <li><a href="/page-1.html">Реставрация зуба (нарастить зуб)</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Коронки</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Коронки на зуб</a></li>
+                
+                <li><a href="/page-1.html">Металлокерамическая коронка</a></li>
+                
+                <li><a href="/page-1.html">Керамическая коронка</a></li>
+                
+                <li><a href="/page-1.html">Металлическая коронка</a></li>
+                
+                <li><a href="/page-1.html">Металлопластмассовая коронка</a></li>
+                
+                <li><a href="/page-1.html">Циркониевые коронки</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Протезирование</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Протезирование зубов</a></li>
+                
+                <li><a href="/page-1.html">Съемные и частично-съемные протезы</a></li>
+                
+                <li><a href="/page-1.html">Мостовидные зубные протезы</a></li>
+                
+                <li><a href="/page-1.html">Бюгельные протезы</a></li>
+                
+                <li><a href="/page-1.html">Капы на зубы</a></li>
+                
+                <li><a href="/page-1.html">Протез бабочка</a></li>
+                
+                <li><a href="/page-1.html">Протезирование на базальных имплантах</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Гигиена, уход, защита</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Чистка зубов ультразвуком</a></li>
+                
+                <li><a href="/page-1.html">Фторирование зубов</a></li>
+                
+                <li><a href="/page-1.html">Герметизация фиссур</a></li>
+                
+                <li><a href="/page-1.html">Рентген зубов</a></li>
+                
+                <li><a href="/page-1.html">Установка пломбы</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Лечение</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Лечение зубов</a></li>
+                
+                <li><a href="/page-1.html">Лечение кариеса</a></li>
+                
+                <li><a href="/page-1.html">Лечение пульпита зуба</a></li>
+                
+                <li><a href="/page-1.html">Лечение периодонтита</a></li>
+                
+                <li><a href="/page-1.html">Клиновидный дефект зуба</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Удаление и хирургия</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Удаление зуба</a></li>
+                
+                <li><a href="/page-1.html">Имплантация зубов</a></li>
+                
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header__menu-line menu-line container">
+        <ul class="menu-line__list">
+            <li><a href="/doctors.html">Специалисты</a></li>
+            <li><a href="/about.html">О нас</a></li>
+            <li><a href="/price.html">Прайс</a></li>
+            <li><a href="/contacts.html">Контакты</a></li>
+            <li><a href="/blog.html">Блог</a></li>
+            <li class="can-open">
+                <a href="#">Услуги</a>
+                <div class="menu-line__sub-menu">
+                    <div class="container">
+                        <div class="sub-menu">
+    <div class="row sub-menu__wrapper">
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Эстетика</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Виниры</a></li>
+                
+                <li><a href="/page-1.html">Брекеты на зубы</a></li>
+                
+                <li><a href="/page-1.html">Отбеливание зубов</a></li>
+                
+                <li><a href="/page-1.html">Реставрация зуба (нарастить зуб)</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Коронки</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Коронки на зуб</a></li>
+                
+                <li><a href="/page-1.html">Металлокерамическая коронка</a></li>
+                
+                <li><a href="/page-1.html">Керамическая коронка</a></li>
+                
+                <li><a href="/page-1.html">Металлическая коронка</a></li>
+                
+                <li><a href="/page-1.html">Металлопластмассовая коронка</a></li>
+                
+                <li><a href="/page-1.html">Циркониевые коронки</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Протезирование</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Протезирование зубов</a></li>
+                
+                <li><a href="/page-1.html">Съемные и частично-съемные протезы</a></li>
+                
+                <li><a href="/page-1.html">Мостовидные зубные протезы</a></li>
+                
+                <li><a href="/page-1.html">Бюгельные протезы</a></li>
+                
+                <li><a href="/page-1.html">Капы на зубы</a></li>
+                
+                <li><a href="/page-1.html">Протез бабочка</a></li>
+                
+                <li><a href="/page-1.html">Протезирование на базальных имплантах</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Гигиена, уход, защита</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Чистка зубов ультразвуком</a></li>
+                
+                <li><a href="/page-1.html">Фторирование зубов</a></li>
+                
+                <li><a href="/page-1.html">Герметизация фиссур</a></li>
+                
+                <li><a href="/page-1.html">Рентген зубов</a></li>
+                
+                <li><a href="/page-1.html">Установка пломбы</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Лечение</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Лечение зубов</a></li>
+                
+                <li><a href="/page-1.html">Лечение кариеса</a></li>
+                
+                <li><a href="/page-1.html">Лечение пульпита зуба</a></li>
+                
+                <li><a href="/page-1.html">Лечение периодонтита</a></li>
+                
+                <li><a href="/page-1.html">Клиновидный дефект зуба</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Удаление и хирургия</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Удаление зуба</a></li>
+                
+                <li><a href="/page-1.html">Имплантация зубов</a></li>
+                
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</header>
+
+
+    <section class="article section container">
+        <div class="section__header">
+            <h2 class="section__title h2">БЛОГ</h2>
+        </div>
+
+        <div class="row">
+            <div class="col col-12 col-lg-7">
+                <div class="article__header">
+                    <p class="article__img"><img src="/assets/img/blog/1.jpg" alt=""></p>
+                    <h1 class="article__title">Сколько по времени проходит лечение брекетами</h1>
+                </div>
+
+                <div class="article__content">
+                    <p>Современные брекет-системы позволяют исправить ортодонтические аномалии разной степени сложности. Их используют для изменения положения, как отдельных зубов, так и целых рядов. Сколько по времени проходит лечение брекетами? Точного ответа на этот вопрос нет. Как правило, срок коррекции находится в диапазоне 3-36 месяцев. Он зависит от многих факторов, в числе которых: возраст пациента, тип аномалии, вид используемых брекетов, класс патологии и т.д.</p>
+                    <h3>Дети, подростки, дети</h3>
+                    <p>Время лечения во многом зависит от состояния зубочелюстной системы. В период её формирования (в детском и подростковом возрасте) процедура проходит максимально быстро (3-6 месяцев). Большинство ортодонтических дефектов в этом случае можно исправить при помощи стоматологических трейнеров. В старшем школьном возрасте они практически полностью теряют свою эффективность, требуя установки полноценной брекет системы. В период 18-23 года срок лечения составляет около 12-18 месяцев. Для взрослых этот показатель вырастает примерно на 6-9 месяцев.</p>
+                    <h3>Зависимость от вида конструкции</h3>
+                    <p>Брекеты могут отличаться материалом изготовления, а также особенностями исполнения. На срок лечения влияют оба фактора. Изделия из металла обладают высокой прочностью, позволяя создавать преимущественное давление на зубы. Более хрупкие керамические, пластиковые и сапфировые модели потребуют преимущественный срок использования. Что касается конструкции, то здесь бесспорными лидерами являются самолигирующие системы. Они сокращают время коррекции (по сравнению с лигатурными) на 3-9 месяцев.</p>
+                    <h3>Класс патологий</h3>
+                    <p>Ортодонтия разделяет зубные аномалии на 3 вида, классифицируя их по степени тяжести и сложности. В первую группу входят незначительные дефекты, такие как скученность передних зубов, наличие пространства между ними, дистопия и т.д. Сколько по времени проходит лечение брекетами? В это случае – не более года, в зависимости от вышеописанных факторов. Второй и третий класс предполагают наличие более серьезных проблем. Лечение перекрестного, медиального, глубокого и других видов прикусов потребует от 2-х лет.</p>
+                    <p>Стоит подчеркнуть, что ортодонтическая коррекция при помощи брекетов всегда имеет индивидуальный характер. Если у одного человека исправление скученности зубов при помощи пластиковой конструкции займет 12 месяцев, то у другого – 18. Причина кроется в индивидуальных особенностях организма. Иногда после прохождения полного курса выравнивания и достижения желаемого результата врач назначает дополнительное лечение в виде установки новой системы. Некоторым пациентам требуется закрепление результата, исключая возможность возвращения зубов в неправильное положение.</p>
+                </div>
+
+                <a class="article__bottom" href="/article.html">
+                    <p>
+                        <b>Смотрите также</b>
+                        Неправильный прикус
+                    </p>
+                    <p>
+                        Читать
+                        <svg><use xlink:href="assets/img/icons/sprite.svg#arrow--big-gray"></use></svg>
+                    </p>
+                </a>
+            </div>
+
+            <div class="col col-12 col-lg-4 offset-lg-1">
+                <b class="article__small-title">Выгодные предложения</b>
+                <div class="article__item stock">
+                    <p class="stock__img"><img src="/assets/img/stock/1.jpg" alt=""></p>
+                    <div class="stock__offer">
+                        <span class="stock__sale">25%</span>
+                        на 4-ю чистку
+                    </div>
+                    <b class="stock__title">Акция на чистку зубов</b>
+                </div>
+                <div class="article__item stock">
+                    <p class="stock__img"><img src="/assets/img/stock/2.jpg" alt=""></p>
+                    <div class="stock__offer">
+                        <span class="stock__sale">25%</span>
+                        на 4-ю чистку
+                    </div>
+                    <b class="stock__title">Акция на элайнеры</b>
+                </div>
+                <a class="article__btn button button--center button--full" href="#">Смотреть полный прайс</a>
+
+                <div class="form form--type1" data-da=".article__content,1024,3">
+                    <form class="" method="POST">
+                        <h3 class="form__title h3">Заполните форму и мы свяжемся с вами!</h3>
+
+                        <div class="form__inputs">
+                            <div class="form__input">
+                                <label class="input">
+                                    <input type="text" placeholder="Имя">
+                                </label>
+                                <label class="input">
+                                    <input type="tel" placeholder="Мобильный телефон">
+                                </label>
+                                <label class="input">
+                                    <input type="text" placeholder="Что вас беспокоит?">
+                                </label>
+                                <label class="input">
+                                    <input type="text" placeholder="Желаемое время приема">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="row form__conf">
+                            <div class="col col-12">
+                                <p>Нажимая на кнопку «Записаться на приём» Вы даётё своё согласие с условиями обработки персональных данных</p>
+                            </div>
+                        </div>
+
+                        <div class="row form__submit">
+                            <div class="col col-12">
+                                <button class="button button--center button--full" type="submit">Записаться на прием</button>
+                            </div>
+                        </div>
+
+                        <p class="form__img form__img--1"><img src="/assets/img/sect-2.png" alt=""></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer section section--accent">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="row">
+                    <div class="col col-12 col-lg-3 footer__left">
+                        <a class="footer__logo js-scroll-to" href="#header"><img src="/assets/img/logo.png" width="170" height="55" alt=""></a>
+
+                        <ul class="footer__soc soc-btns" data-da=".footer__top,1024,last">
+                            <li class="soc-btns__item"><a href="#"><svg><use xlink:href="assets/img/icons/sprite.svg#inst"></use></svg></a></li>
+                            <li class="soc-btns__item"><a href="#"><svg><use xlink:href="assets/img/icons/sprite.svg#yt"></use></svg></a></li>
+                            <li class="soc-btns__item"><a href="#"><svg><use xlink:href="assets/img/icons/sprite.svg#wa"></use></svg></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col col-12 col-lg-9">
+                        <div class="footer__top">
+                            <div class="footer__info info">
+                                <div class="info__item">
+                                    <b class="info__title">Адрес</b>
+                                    <p class="info__content info__content--address">Космонавта Беляева, 8</p>
+                                </div>
+                                <div class="info__item">
+                                    <b class="info__title">Режим работы</b>
+                                    <p class="info__content info__content--time">Пн-Пт 09:00-21:00</p>
+                                </div>
+                                <div class="info__item">
+                                    <b class="info__title">Телефон</b>
+                                    <p class="info__content info__content--tel"><a href="+73422266662">+7 (342) 226-66-62</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form class="footer__form form" method="POST">
+                            <div class="row">
+                                <div class="col col-12 col-lg-4 form__input">
+                                    <label class="input">
+                                        <input type="text" placeholder="Имя">
+                                    </label>
+                                </div>
+                                <div class="col col-12 col-lg-4 form__input">
+                                    <label class="input">
+                                        <input type="tel" placeholder="Мобильный телефон">
+                                    </label>
+                                </div>
+                                <div class="col col-12 col-lg-4">
+                                    <button class="footer__btn button button--center button--full" type="submit">Записаться на прием</button>
+                                </div>
+                            </div>
+                            <div class="row form__conf">
+                                <div class="col col-12">
+                                    <p>Нажимая на кнопку «Записаться на приём» Вы даётё своё согласие с условиями обработки персональных данных</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

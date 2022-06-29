@@ -1,0 +1,775 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная</title>
+    <link rel="stylesheet" href="assets/libs/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/libs/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/libs/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body class="">
+
+    <div class="body-icon"></div>
+
+    <header class="header" id="header">
+    <div class="header__top-line top-line">
+        <div class="top-line__absolute">
+            <div class="top-line__wrapper">
+                <div class="container">
+                    <a class="top-line__logo" href="/"><img src="/assets/img/logo.png" width="170" height="55" alt=""></a>
+
+                    <div class="top-line__info info" data-da=".menu__wrapper,1024,last">
+                        <div class="info__item">
+                            <b class="info__title">Адрес</b>
+                            <p class="info__content info__content--address">Космонавта Беляева, 8</p>
+                        </div>
+                        <div class="info__item">
+                            <b class="info__title">Режим работы</b>
+                            <p class="info__content info__content--time">Пн-Пт 09:00-21:00</p>
+                        </div>
+                        <div class="info__item">
+                            <b class="info__title">Телефон</b>
+                            <p class="info__content info__content--tel"><a href="+73422266662">+7 (342) 226-66-62</a></p>
+                        </div>
+                    </div>
+
+                    <button class="top-line__mnu-btn" type="button">
+                        <span class="text">Меню</span>
+                        <span class="burger">
+                            <span></span>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="menu" style="display:none;">
+                    <div class="container menu__wrapper">
+                        <ul class="menu__list">
+                            <li><a href="/doctors.html">Специалисты</a></li>
+                            <li><a href="/about.html">О нас</a></li>
+                            <li><a href="/price.html">Прайс</a></li>
+                            <li><a href="/contacts.html">Контакты</a></li>
+                            <li><a href="/blog.html">Блог</a></li>
+                            <li class="can-open"><a href="#">Услуги</a></li>
+                        </ul>
+
+                        <div class="sub-menu">
+    <div class="row sub-menu__wrapper">
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Эстетика</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Виниры</a></li>
+                
+                <li><a href="/page-1.html">Брекеты на зубы</a></li>
+                
+                <li><a href="/page-1.html">Отбеливание зубов</a></li>
+                
+                <li><a href="/page-1.html">Реставрация зуба (нарастить зуб)</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Коронки</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Коронки на зуб</a></li>
+                
+                <li><a href="/page-1.html">Металлокерамическая коронка</a></li>
+                
+                <li><a href="/page-1.html">Керамическая коронка</a></li>
+                
+                <li><a href="/page-1.html">Металлическая коронка</a></li>
+                
+                <li><a href="/page-1.html">Металлопластмассовая коронка</a></li>
+                
+                <li><a href="/page-1.html">Циркониевые коронки</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Протезирование</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Протезирование зубов</a></li>
+                
+                <li><a href="/page-1.html">Съемные и частично-съемные протезы</a></li>
+                
+                <li><a href="/page-1.html">Мостовидные зубные протезы</a></li>
+                
+                <li><a href="/page-1.html">Бюгельные протезы</a></li>
+                
+                <li><a href="/page-1.html">Капы на зубы</a></li>
+                
+                <li><a href="/page-1.html">Протез бабочка</a></li>
+                
+                <li><a href="/page-1.html">Протезирование на базальных имплантах</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Гигиена, уход, защита</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Чистка зубов ультразвуком</a></li>
+                
+                <li><a href="/page-1.html">Фторирование зубов</a></li>
+                
+                <li><a href="/page-1.html">Герметизация фиссур</a></li>
+                
+                <li><a href="/page-1.html">Рентген зубов</a></li>
+                
+                <li><a href="/page-1.html">Установка пломбы</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Лечение</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Лечение зубов</a></li>
+                
+                <li><a href="/page-1.html">Лечение кариеса</a></li>
+                
+                <li><a href="/page-1.html">Лечение пульпита зуба</a></li>
+                
+                <li><a href="/page-1.html">Лечение периодонтита</a></li>
+                
+                <li><a href="/page-1.html">Клиновидный дефект зуба</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Удаление и хирургия</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Удаление зуба</a></li>
+                
+                <li><a href="/page-1.html">Имплантация зубов</a></li>
+                
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header__menu-line menu-line container">
+        <ul class="menu-line__list">
+            <li><a href="/doctors.html">Специалисты</a></li>
+            <li><a href="/about.html">О нас</a></li>
+            <li><a href="/price.html">Прайс</a></li>
+            <li><a href="/contacts.html">Контакты</a></li>
+            <li><a href="/blog.html">Блог</a></li>
+            <li class="can-open">
+                <a href="#">Услуги</a>
+                <div class="menu-line__sub-menu">
+                    <div class="container">
+                        <div class="sub-menu">
+    <div class="row sub-menu__wrapper">
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Эстетика</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Виниры</a></li>
+                
+                <li><a href="/page-1.html">Брекеты на зубы</a></li>
+                
+                <li><a href="/page-1.html">Отбеливание зубов</a></li>
+                
+                <li><a href="/page-1.html">Реставрация зуба (нарастить зуб)</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Коронки</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Коронки на зуб</a></li>
+                
+                <li><a href="/page-1.html">Металлокерамическая коронка</a></li>
+                
+                <li><a href="/page-1.html">Керамическая коронка</a></li>
+                
+                <li><a href="/page-1.html">Металлическая коронка</a></li>
+                
+                <li><a href="/page-1.html">Металлопластмассовая коронка</a></li>
+                
+                <li><a href="/page-1.html">Циркониевые коронки</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Протезирование</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Протезирование зубов</a></li>
+                
+                <li><a href="/page-1.html">Съемные и частично-съемные протезы</a></li>
+                
+                <li><a href="/page-1.html">Мостовидные зубные протезы</a></li>
+                
+                <li><a href="/page-1.html">Бюгельные протезы</a></li>
+                
+                <li><a href="/page-1.html">Капы на зубы</a></li>
+                
+                <li><a href="/page-1.html">Протез бабочка</a></li>
+                
+                <li><a href="/page-1.html">Протезирование на базальных имплантах</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Гигиена, уход, защита</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Чистка зубов ультразвуком</a></li>
+                
+                <li><a href="/page-1.html">Фторирование зубов</a></li>
+                
+                <li><a href="/page-1.html">Герметизация фиссур</a></li>
+                
+                <li><a href="/page-1.html">Рентген зубов</a></li>
+                
+                <li><a href="/page-1.html">Установка пломбы</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Лечение</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Лечение зубов</a></li>
+                
+                <li><a href="/page-1.html">Лечение кариеса</a></li>
+                
+                <li><a href="/page-1.html">Лечение пульпита зуба</a></li>
+                
+                <li><a href="/page-1.html">Лечение периодонтита</a></li>
+                
+                <li><a href="/page-1.html">Клиновидный дефект зуба</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="col col-12 col-md-6 col-lg-4">
+            <a class="sub-menu__sm-title" href="/page-1.html">Удаление и хирургия</a>
+            <ul class="sub-menu__list">
+                
+                <li><a href="/page-1.html">Удаление зуба</a></li>
+                
+                <li><a href="/page-1.html">Имплантация зубов</a></li>
+                
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</header>
+
+
+    <section class="first-block first-block--type2 container">
+        <div class="row">
+            <div class="col col-12 col-lg-6">
+                <p class="first-block__img" data-da=".first-block__content,1024,2"><img src="/assets/img/main-2.png" alt=""></p>
+            </div>
+            <div class="col col-12 col-lg-6">
+                <div class="first-block__content">
+                    <h1 class="first-block__title">Пожизненная гарантия на&nbsp;имплант, и повышенная на&nbsp;работу доктора.</h1>
+                    <p class="first-block__descr">Приживаемость имплантов в нашей клинике >95%</p>
+                    <div class="first-block__btns">
+                        <a class="first-block__btn button button--gradient js-scroll-to" href="#form1">
+                            Получить консультацию
+                            <svg><use xlink:href="assets/img/icons/sprite.svg#arrow-right--white"></use></svg>
+                        </a>
+                        <a class="first-block__btn button button--invers button--center button--gradient" href="tel:+73422266662">+7 (342) 226-66-62</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-block container">
+    <div class="row">
+        <div class="col col-12 col-lg-7">
+            <div class="text-block__content">
+                <div class="text-block__body">
+                    <p><b>Зубные имплантаты – это искусственные корни зубов, используемые для восстановления отсутствующего зуба или зубов, которые предотвращают потерю костной массы челюсти.</b></p>
+                    <p>Зубные имплантаты являются эффективным долгосрочным решением для людей, страдающих от отсутствия зубов, разрушения зубов или хронических проблем с зубами. Поскольку они ощущаются и функционируют как естественные зубы, зубные имплантаты быстро становятся новым стандартом в стоматологии.</p>
+                    <p>Наша команда специалистов поможет вам забыть о дискомфорте при жевании твердой пищи. Благодаря установке имплантов мы поможем вернуть вашим зубам красоту и силу.<br>Наша клиника использует новейшие технологии в области установки зубных имплантатов, которые обеспечивают полную приживаемость имплантов и показывают превосходные результаты на протяжении долгого времени!</p>
+                </div>
+                <div class="text-block__bottom">
+                    <b class="text-block__cost">Цена: <br>от 20 000 рублей</b>
+                    <a class="text-block__btn button button--gradient js-scroll-to" href="#form1">
+                        Записаться на прием
+                        <svg><use xlink:href="assets/img/icons/sprite.svg#arrow-right--white"></use></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col col-12 col-lg-5">
+            <p class="text-block__img"><img src="/assets/img/sect-3.png" alt=""></p>
+        </div>
+    </div>
+</section>
+
+    <section class="staff-slider section">
+    <div class="staff-slider__slider owl-carousel owl-theme">
+        <div class="staff-slider__item">
+            <div class="staff-slider__accent">
+                <div class="container">
+                    <div class="staff-slider__left">
+                        <div class="staff-slider__abs">
+                            <p class="staff-slider__img"><img src="/assets/img/team/1.png" alt=""></p>
+                            <h4 class="staff-slider__name h4">Новикова Елена Владимировна</h4>
+                            <p class="staff-slider__text">Стоматолог-терапевт</p>
+                        </div>
+                    </div>
+                    <div class="staff-slider__quote">
+                        <p>«Как сказал писатель, Антон Павлович Чехов, в человеке все должно быть прекрасно – и лицо, и одежда, и душа, и мысли. Красивыми наши лица делают улыбки. Если человек улыбается - он счастлив, и своим счастьем делится с окружающими.</p>
+                        <p>Конечно, если у человека здоровая и красивая улыбка, он улыбается миру гораздо смелее и шире. В «Санлайф» вашу улыбку сделают прекрасной! В этом, несомненно, и состоит наша задача – задача эстетической стоматологии».</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="staff-slider__bottom staff-content container">
+                <div class="staff-content__item">
+                    <b class="staff-content__title">Образование:</b>
+                    <div class="staff-content__text">
+                        <p>ГОУ ВПО Пермская государственная медицинская академия им. ак. Е.А.Вагнера, Диплом ВСВ 0467602 от 25 июня 2004 г., присуждена квалификация ВРАЧ-СТОМАТОЛОГ по специальности "Стоматология".</p>
+                    </div>
+                </div>
+                <div class="staff-content__item">
+                    <b class="staff-content__title">Сертификаты:</b>
+                    <div class="staff-content__text">
+                        <p>Сертификат A № 2830111 от 01 июля 2005 года. ГОУ ВПО ПГМА им. ак. Е.А.Вагнера</p>
+                        <p>Диплом о профессиональной переподготовки ПП-I №318761 в сфере стоматологии терапевтической от 22 декабря 2008 года.</p>
+                        <p>Сертификат А № 3586117 от 22 декабря 2008 года по специальности стоматология терапевтическая. ГБОУ ВПО ПГМА им. ак. Е.А.Вагнера</p>
+                        <p>Св-во о повышении квалификации по стоматологии терапевтической от 26 октября 2013 года.</p>
+                        <p>Сертификат специалиста № 1159241751371 от 26 сентября 2018 года по специальности стоматология терапевтическая.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="staff-slider__item">
+            <div class="staff-slider__accent">
+                <div class="container">
+                    <div class="staff-slider__left">
+                        <div class="staff-slider__abs">
+                            <p class="staff-slider__img"><img src="/assets/img/team/2.png" alt=""></p>
+                            <h4 class="staff-slider__name h4">Новикова Елена Владимировна</h4>
+                            <p class="staff-slider__text">Стоматолог-терапевт</p>
+                        </div>
+                    </div>
+                    <div class="staff-slider__quote">
+                        <p>«Как сказал писатель, Антон Павлович Чехов, в человеке все должно быть прекрасно – и лицо, и одежда, и душа, и мысли. Красивыми наши лица делают улыбки. Если человек улыбается - он счастлив, и своим счастьем делится с окружающими.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="staff-slider__bottom staff-content container">
+                <div class="staff-content__item">
+                    <b class="staff-content__title">Образование:</b>
+                    <div class="staff-content__text">
+                        <p>ГОУ ВПО Пермская государственная медицинская академия им. ак. Е.А.Вагнера, Диплом ВСВ 0467602 от 25 июня 2004 г., присуждена квалификация ВРАЧ-СТОМАТОЛОГ по специальности "Стоматология".</p>
+                    </div>
+                </div>
+                <div class="staff-content__item">
+                    <b class="staff-content__title">Сертификаты:</b>
+                    <div class="staff-content__text">
+                        <p>Сертификат A № 2830111 от 01 июля 2005 года. ГОУ ВПО ПГМА им. ак. Е.А.Вагнера</p>
+                        <p>Диплом о профессиональной переподготовки ПП-I №318761 в сфере стоматологии терапевтической от 22 декабря 2008 года.</p>
+                        <p>Сертификат А № 3586117 от 22 декабря 2008 года по специальности стоматология терапевтическая. ГБОУ ВПО ПГМА им. ак. Е.А.Вагнера</p>
+                        <p>Св-во о повышении квалификации по стоматологии терапевтической от 26 октября 2013 года.</p>
+                        <p>Сертификат специалиста № 1159241751371 от 26 сентября 2018 года по специальности стоматология терапевтическая.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="staff-slider__item">
+            <div class="staff-slider__accent">
+                <div class="container">
+                    <div class="staff-slider__left">
+                        <div class="staff-slider__abs">
+                            <p class="staff-slider__img"><img src="/assets/img/team/3.png" alt=""></p>
+                            <h4 class="staff-slider__name h4">Новикова Елена Владимировна</h4>
+                            <p class="staff-slider__text">Стоматолог-терапевт</p>
+                        </div>
+                    </div>
+                    <div class="staff-slider__quote">
+                        <p>«Как сказал писатель, Антон Павлович Чехов, в человеке все должно быть прекрасно – и лицо, и одежда, и душа, и мысли. Красивыми наши лица делают улыбки. Если человек улыбается - он счастлив, и своим счастьем делится с окружающими.</p>
+                        <p>Конечно, если у человека здоровая и красивая улыбка, он улыбается миру гораздо смелее и шире. В «Санлайф» вашу улыбку сделают прекрасной! В этом, несомненно, и состоит наша задача – задача эстетической стоматологии».</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="staff-slider__bottom staff-content container">
+                <div class="staff-content__item">
+                    <b class="staff-content__title">Образование:</b>
+                    <div class="staff-content__text">
+                        <p>ГОУ ВПО Пермская государственная медицинская академия им. ак. Е.А.Вагнера, Диплом ВСВ 0467602 от 25 июня 2004 г., присуждена квалификация ВРАЧ-СТОМАТОЛОГ по специальности "Стоматология".</p>
+                    </div>
+                </div>
+                <div class="staff-content__item">
+                    <b class="staff-content__title">Сертификаты:</b>
+                    <div class="staff-content__text">
+                        <p>Сертификат A № 2830111 от 01 июля 2005 года. ГОУ ВПО ПГМА им. ак. Е.А.Вагнера</p>
+                        <p>Диплом о профессиональной переподготовки ПП-I №318761 в сфере стоматологии терапевтической от 22 декабря 2008 года.</p>
+                        <p>Сертификат А № 3586117 от 22 декабря 2008 года по специальности стоматология терапевтическая. ГБОУ ВПО ПГМА им. ак. Е.А.Вагнера</p>
+                        <p>Св-во о повышении квалификации по стоматологии терапевтической от 26 октября 2013 года.</p>
+                        <p>Сертификат специалиста № 1159241751371 от 26 сентября 2018 года по специальности стоматология терапевтическая.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="cost-info section container">
+    <div class="section__header">
+        <h2 class="section__title h2">ЦЕНЫ</h2>
+        <p class="section__descr">на имплантацию</p>
+    </div>
+
+    <div class="row">
+        <div class="col col-12 col-lg-7 cost-info__table prices">
+            <div class="prices__block">
+                <div class="prices__row">
+                    <p class="prices__name">Закрытый синус-лифтинг</p>
+                    <p class="prices__cost">8 800</p>
+                </div>
+                <div class="prices__row">
+                    <p class="prices__name">Открытый синус-лифтинг</p>
+                    <p class="prices__cost">13 750</p>
+                </div>
+                <div class="prices__row">
+                    <p class="prices__name">Установка импланта Astra</p>
+                    <p class="prices__cost">38 400</p>
+                </div>
+                <div class="prices__row">
+                    <p class="prices__name">Установка импланта Implantium</p>
+                    <p class="prices__cost">20 800</p>
+                </div>
+                <div class="prices__row">
+                    <p class="prices__name">Установка импланта Straumann</p>
+                    <p class="prices__cost">38 400</p>
+                </div>
+                <div class="prices__row">
+                    <p class="prices__name">Установка ортоимпланта</p>
+                    <p class="prices__cost">13 650</p>
+                </div>
+                <div class="prices__row">
+                    <p class="prices__name">Установка старого формирователя</p>
+                    <p class="prices__cost">550</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col col-12 col-lg-5 cost-info__offer">
+            <div class="offer">
+                <h3 class="offer__title h3">Акция!</h3>
+                <p class="offer__text">Установка импланта Implantium под ключ за&nbsp;20&nbsp;000 рублей!</p>
+                <button class="offer__btn button button--gradient">
+                    Записаться на прием
+                    <svg><use xlink:href="assets/img/icons/sprite.svg#arrow-right--white"></use></svg>
+                </button>
+                <img class="offer__img" src="/assets/img/sect-5.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="reviews section container">
+    <div class="section__header">
+        <h2 class="section__title h2">ОТЗЫВЫ</h2>
+        <p class="section__descr">пациентов</p>
+    </div>
+
+    <div class="reviews__wrapper">
+        <div class="reviews__slider owl-carousel owl-theme">
+            <div class="reviews__item">
+                <p class="reviews__img"><img src="/assets/img/reviews/1.jpg" alt=""></p>
+                <div class="reviews__content">
+                    <b class="reviews__name">Ангелина</b>
+                    <p class="reviews__text">У моих зубов всегда были проблемы с кариесом, коронками и корневыми каналами. Я знал, что рано или поздно мне придется вставлять зубные протезы, отсюда и начался поиск имплантатов. Сумма, которую я потратил на имплантаты, того стоит. Мои зубные имплантаты не просто хороши, они великолепны. Они изменили мою жизнь к лучшему.</p>
+                </div>
+            </div>
+            <div class="reviews__item">
+                <p class="reviews__img"><img src="/assets/img/reviews/1.jpg" alt=""></p>
+                <div class="reviews__content">
+                    <b class="reviews__name">Ангелина</b>
+                    <p class="reviews__text">У моих зубов всегда были проблемы с кариесом, коронками и корневыми каналами. Я знал, что рано или поздно мне придется вставлять зубные протезы, отсюда и начался поиск имплантатов. Сумма, которую я потратил на имплантаты, того стоит. Мои зубные имплантаты не просто хороши, они великолепны. Они изменили мою жизнь к лучшему.</p>
+                </div>
+            </div>
+            <div class="reviews__item">
+                <p class="reviews__img"><img src="/assets/img/reviews/2.jpg" alt=""></p>
+                <div class="reviews__content">
+                    <b class="reviews__name">Ангелина</b>
+                    <p class="reviews__text">У моих зубов всегда были проблемы с кариесом, коронками и корневыми каналами. Я знал, что рано или поздно мне придется вставлять зубные протезы, отсюда и начался поиск имплантатов. Сумма, которую я потратил на имплантаты, того стоит. Мои зубные имплантаты не просто хороши, они великолепны. Они изменили мою жизнь к лучшему.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <section class="form form--type1 section section--mob-accent" id="form1">
+        <form class="container" method="POST">
+            <h3 class="form__title h3">Заполните форму и мы свяжемся с вами!</h3>
+
+            <div class="row form__inputs">
+                <div class="col col-12 col-lg-4 form__input">
+                    <label class="input">
+                        <input type="text" placeholder="Имя">
+                    </label>
+                    <label class="input">
+                        <input type="tel" placeholder="Мобильный телефон">
+                    </label>
+                </div>
+                <div class="col col-12 col-lg-4 form__input">
+                    <label class="input">
+                        <input type="text" placeholder="Что вас беспокоит?">
+                    </label>
+                    <label class="input">
+                        <input type="text" placeholder="Желаемое время приема">
+                    </label>
+                </div>
+            </div>
+
+            <div class="row form__bottom">
+                <div class="col col-12 col-lg-4">
+                    <p>Нажимая на кнопку «Записаться на приём» Вы даётё своё согласие с условиями обработки персональных данных</p>
+                </div>
+                <div class="col col-12 col-lg-4">
+                    <button class="button button--center button--full" type="submit">Записаться на прием</button>
+                </div>
+            </div>
+
+            <p class="form__img form__img--1"><img src="/assets/img/sect-2.png" alt=""></p>
+        </form>
+    </section>
+
+    <section class="step-list section container">
+    <h3 class="step-list__title h3">Имплантация зубов</h3>
+    <div class="row">
+        <div class="col col-12 col-lg-10 offset-lg-2">
+            <h4 class="step-list__small-title">Процесс установки зубного имплантата включает в себя несколько этапов, в том числе:</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-12 col-lg-2">
+            <p class="step-list__img"><img src="/assets/img/sect-6.png" alt=""></p>
+        </div>
+        <div class="col col-12 col-lg-4">
+            <p class="step-list__descr">Это процедура, при которой корни зубов заменяются металлическими винтообразными штифтами, а поврежденные или отсутствующие зубы заменяются искусственными зубами, которые выглядят и функционируют так же, как настоящие. То, как выполняется операция по имплантации зубов, зависит от типа имплантата и состояния вашей челюстной кости.</p>
+        </div>
+        <div class="col col-12 col-lg-6">
+            <div class="step-list__wrapper">
+                <div class="step-list__slider owl-carousel owl-theme">
+                    <div class="step-list__item">
+                        <h5 class="step-list__name">Удаление поврежденного зуба</h5>
+                        <p class="step-list__text">Если у вас остался поврежденный зуб, который необходимо заменить, ваш стоматолог удалит его перед выполнением дальнейших стоматологических работ.</p>
+                    </div>
+                    <div class="step-list__item">
+                        <h5 class="step-list__name">Наращивание костной ткани</h5>
+                        <p class="step-list__text">Этот этап не является обязательным. Наращивание кости проводится только при ее недостатке. Ваша челюсть должна быть сильной, поскольку при жевании на нее оказывается сильное давлении.</p>
+                    </div>
+                    <div class="step-list__item">
+                        <h5 class="step-list__name">Удаление поврежденного зуба</h5>
+                        <p class="step-list__text">Если у вас остался поврежденный зуб, который необходимо заменить, ваш стоматолог удалит его перед выполнением дальнейших стоматологических работ.</p>
+                    </div>
+                    <div class="step-list__item">
+                        <h5 class="step-list__name">Наращивание костной ткани</h5>
+                        <p class="step-list__text">Этот этап не является обязательным. Наращивание кости проводится только при ее недостатке. Ваша челюсть должна быть сильной, поскольку при жевании на нее оказывается сильное давлении.</p>
+                    </div>
+                    <div class="step-list__item">
+                        <h5 class="step-list__name">Удаление поврежденного зуба</h5>
+                        <p class="step-list__text">Если у вас остался поврежденный зуб, который необходимо заменить, ваш стоматолог удалит его перед выполнением дальнейших стоматологических работ.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="results section container">
+    <div class="section__header">
+        <h2 class="section__title h2">РЕЗУЛЬТАТЫ</h2>
+        <p class="section__descr">работы с пациентами</p>
+    </div>
+
+    <div class="results__slider owl-carousel owl-theme">
+        <div class="results__item">
+            <div class="results__img-composition">
+                <p class="results__main-img"><img src="/assets/img/result/main.jpg" alt=""></p>
+                <div class="results__abs">
+                    <div class="results__slide">
+                        <p class="results__img"><img src="/assets/img/result/1.jpg" alt=""></p>
+                        <span>До</span>
+                    </div>
+                    <div class="results__slide">
+                        <p class="results__img"><img src="/assets/img/result/2.jpg" alt=""></p>
+                        <span>После</span>
+                    </div>
+                </div>
+            </div>
+            <a class="results__btn button button--full button--center" href="#">Установка  импланта Astra</a>
+        </div>
+        <div class="results__item">
+            <div class="results__img-composition">
+                <p class="results__main-img"><img src="/assets/img/result/main.jpg" alt=""></p>
+                <div class="results__abs">
+                    <div class="results__slide">
+                        <p class="results__img"><img src="/assets/img/result/1.jpg" alt=""></p>
+                        <span>До</span>
+                    </div>
+                    <div class="results__slide">
+                        <p class="results__img"><img src="/assets/img/result/2.jpg" alt=""></p>
+                        <span>После</span>
+                    </div>
+                </div>
+            </div>
+            <a class="results__btn button button--full button--center" href="#">Установка  импланта Straumann</a>
+        </div>
+        <div class="results__item">
+            <div class="results__img-composition">
+                <p class="results__main-img"><img src="/assets/img/result/main.jpg" alt=""></p>
+                <div class="results__abs">
+                    <div class="results__slide">
+                        <p class="results__img"><img src="/assets/img/result/1.jpg" alt=""></p>
+                        <span>До</span>
+                    </div>
+                    <div class="results__slide">
+                        <p class="results__img"><img src="/assets/img/result/2.jpg" alt=""></p>
+                        <span>После</span>
+                    </div>
+                </div>
+            </div>
+            <a class="results__btn button button--full button--center" href="#">Установка  импланта Astra</a>
+        </div>
+        <div class="results__item">
+            <div class="results__img-composition">
+                <p class="results__main-img"><img src="/assets/img/result/main.jpg" alt=""></p>
+                <div class="results__abs">
+                    <div class="results__slide">
+                        <p class="results__img"><img src="/assets/img/result/1.jpg" alt=""></p>
+                        <span>До</span>
+                    </div>
+                    <div class="results__slide">
+                        <p class="results__img"><img src="/assets/img/result/2.jpg" alt=""></p>
+                        <span>После</span>
+                    </div>
+                </div>
+            </div>
+            <a class="results__btn button button--full button--center" href="#">Установка  импланта Straumann</a>
+        </div>
+        <div class="results__item">
+            <div class="results__img-composition">
+                <p class="results__main-img"><img src="/assets/img/result/main.jpg" alt=""></p>
+                <div class="results__abs">
+                    <div class="results__slide">
+                        <p class="results__img"><img src="/assets/img/result/1.jpg" alt=""></p>
+                        <span>До</span>
+                    </div>
+                    <div class="results__slide">
+                        <p class="results__img"><img src="/assets/img/result/2.jpg" alt=""></p>
+                        <span>После</span>
+                    </div>
+                </div>
+            </div>
+            <a class="results__btn button button--full button--center" href="#">Установка  импланта Astra</a>
+        </div>
+    </div>
+</section>
+
+
+    <footer class="footer section section--accent">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="row">
+                    <div class="col col-12 col-lg-3 footer__left">
+                        <a class="footer__logo js-scroll-to" href="#header"><img src="/assets/img/logo.png" width="170" height="55" alt=""></a>
+
+                        <ul class="footer__soc soc-btns" data-da=".footer__top,1024,last">
+                            <li class="soc-btns__item"><a href="#"><svg><use xlink:href="assets/img/icons/sprite.svg#inst"></use></svg></a></li>
+                            <li class="soc-btns__item"><a href="#"><svg><use xlink:href="assets/img/icons/sprite.svg#yt"></use></svg></a></li>
+                            <li class="soc-btns__item"><a href="#"><svg><use xlink:href="assets/img/icons/sprite.svg#wa"></use></svg></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col col-12 col-lg-9">
+                        <div class="footer__top">
+                            <div class="footer__info info">
+                                <div class="info__item">
+                                    <b class="info__title">Адрес</b>
+                                    <p class="info__content info__content--address">Космонавта Беляева, 8</p>
+                                </div>
+                                <div class="info__item">
+                                    <b class="info__title">Режим работы</b>
+                                    <p class="info__content info__content--time">Пн-Пт 09:00-21:00</p>
+                                </div>
+                                <div class="info__item">
+                                    <b class="info__title">Телефон</b>
+                                    <p class="info__content info__content--tel"><a href="+73422266662">+7 (342) 226-66-62</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form class="footer__form form" method="POST">
+                            <div class="row">
+                                <div class="col col-12 col-lg-4 form__input">
+                                    <label class="input">
+                                        <input type="text" placeholder="Имя">
+                                    </label>
+                                </div>
+                                <div class="col col-12 col-lg-4 form__input">
+                                    <label class="input">
+                                        <input type="tel" placeholder="Мобильный телефон">
+                                    </label>
+                                </div>
+                                <div class="col col-12 col-lg-4">
+                                    <button class="footer__btn button button--center button--full" type="submit">Записаться на прием</button>
+                                </div>
+                            </div>
+                            <div class="row form__conf">
+                                <div class="col col-12">
+                                    <p>Нажимая на кнопку «Записаться на приём» Вы даётё своё согласие с условиями обработки персональных данных</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
