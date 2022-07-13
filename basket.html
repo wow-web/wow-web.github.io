@@ -460,41 +460,346 @@
     <section class="bread-crumbs container">
         <ul class="bread-crumbs__list">
             <li class="bread-crumbs__item"><a href="/">Главная</a></li>
-            <li class="bread-crumbs__item"><a>Условия доставки</a></li>
+            <li class="bread-crumbs__item"><a>Корзина</a></li>
         </ul>
     </section>
 
-    <section class="article container">
-        <div class="article__left">
-            <h1 class="article__title h2">Условия доставки</h1>
+    <section class="basket container">
+        <div class="basket__title">
+            <h1 class="h2">Корзина</h1>
         </div>
-        <div class="article__content">
-            <h2>Курьерская доставка</h2>
-            <p>Вы можете заказать доставку товара с помощью курьера, который прибудет по указанному адресу в будние дни и субботу с 9.00 до 19.00. Курьерская служба, после поступления товара на склад, свяжется с вами и предложит выбрать удобное время доставки. Уточнит адрес.</p>
-            <p>Вы вскрываете упаковку при курьере, осматриваете на целостность и соответствие указанной комплектации. Если речь идёт об одежде, допустима примерка. Время осмотра и примерки ограничено 15 минутами. После вы можете отказаться частично или полностью от покупки.</p>
-            <p>Доставка бесплатна при заказе от 15000 рублей.</p>
 
-            <img src="./assets/img/delivery-1.jpg" alt="">
+        <div class="basket__content">
+            <div class="basket__header">
+                <div class="basket__radio">
+                    <label>
+                        <input type="radio" name="delivery">
+                        <span>Самовынос</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="delivery" checked>
+                        <span>Доставка</span>
+                    </label>
+                </div>
 
-            <h2>Самовывоз из магазина</h2>
-            <p>Вы можете забрать товар в одном из магазинов, сотрудничающих с нами. Список торговых точек, которые принимают заказы от нашей компании появится у вас в корзине. Когда заказ поступит в ваш город, вам придёт уведомление. Вы просто идёте в этот магазин, обращаетесь к сотруднику в кассовой зоне и называете номер заказа. Забрать покупку может ваш друг или родственник, который знает номер и имя, на кого он оформлен.</p>
+                <div class="basket__right">
+                    <p class="basket__count" data-da=".basket__title,1023,last">В корзине 2 товара</p>
+                    <button class="basket__del" type="button">
+                        <svg><use xlink:href="./assets/img/icons/sprite.svg#close-small"></use></svg>
+                        Очистить
+                    </button>
+                </div>
+            </div>
 
-            <img src="./assets/img/delivery-2.jpg" alt="">
+            <table class="basket__table">
+                <tr class="basket__row">
+                    <td class="basket__item basket__item--img">
+                        <img src="./assets/img/products1/1.png" alt="">
+                    </td>
+                    <td class="basket__item basket__item--title">
+                        <b>Узбекский чугунный казан 16 л с круглым дном, с крышкой</b>
+                    </td>
+                    <td class="basket__item basket__item--cost1">
+                        <div class="basket__item-wrapper">
+                            <b class="basket__small-title">Цена за 1 шт.</b>
+                            3 590 ₽
+                        </div>
+                    </td>
+                    <td class="basket__item">
+                        <div class="basket__item-wrapper">
+                            <b class="basket__small-title">Вес</b>
+                            10 кг
+                        </div>
+                    </td>
+                    <td class="basket__item basket__item--count">
+                        <div class="count">
+                            <button type="button"><svg><use xlink:href="./assets/img/icons/sprite.svg#minus"></use></svg></button>
+                            <input type="text" value="1">
+                            <button type="button"><svg><use xlink:href="./assets/img/icons/sprite.svg#plus"></use></svg></button>
+                        </div>
+                    </td>
+                    <td class="basket__item basket__item--cost">
+                        <div class="basket__item-wrapper">
+                            <b class="basket__small-title">Цена</b>
+                            3 590 ₽
+                        </div>
+                    </td>
+                    <td class="basket__item basket__item--del">
+                        <button class="basket__del-row" type="button"><svg><use xlink:href="./assets/img/icons/sprite.svg#close-small"></use></svg></button>
+                    </td>
+                </tr>
+                <tr class="basket__row">
+                    <td class="basket__item basket__item--img">
+                        <img src="./assets/img/products1/2.png" alt="">
+                    </td>
+                    <td class="basket__item basket__item--title">
+                        <b>Печь эконом для казана на 6 литров d - 280 mm.</b>
+                    </td>
+                    <td class="basket__item basket__item--cost1">
+                        <div class="basket__item-wrapper">
+                            <b class="basket__small-title">Цена за 1 шт.</b>
+                            3 590 ₽
+                        </div>
+                    </td>
+                    <td class="basket__item">
+                        <div class="basket__item-wrapper">
+                            <b class="basket__small-title">Вес</b>
+                            10 кг
+                        </div>
+                    </td>
+                    <td class="basket__item basket__item--count">
+                        <div class="count">
+                            <button type="button"><svg><use xlink:href="./assets/img/icons/sprite.svg#minus"></use></svg></button>
+                            <input type="text" value="1">
+                            <button type="button"><svg><use xlink:href="./assets/img/icons/sprite.svg#plus"></use></svg></button>
+                        </div>
+                    </td>
+                    <td class="basket__item basket__item--cost">
+                        <div class="basket__item-wrapper">
+                            <b class="basket__small-title">Цена</b>
+                            3 590 ₽
+                        </div>
+                    </td>
+                    <td class="basket__item basket__item--del">
+                        <button type="button"><svg><use xlink:href="./assets/img/icons/sprite.svg#close-small"></use></svg></button>
+                    </td>
+                </tr>
+            </table>
 
-            <h2>Постамат</h2>
-            <p>Постамат – это терминал с автоматизированной системой для хранения заказанных товаров. Удобство в том, что человек может забрать заказ в любое удобное время.</p>
+            <div class="basket__bottom">
+                <b class="basket__summ">Итого: 6 110 ₽</b>
+                <button class="basket__btn button" type="button">Оформить заказ</button>
+                <button class="basket__btn button button--invers" type="button">Купить в 1 клик</button>
+            </div>
+        </div>
+    </section>
 
-            <h2>Как работать с постаматом:</h2>
+    <section class="slider slider--card container">
+        <div class="slider__descr">
+            <h2 class="slider__title h2">
+                С этими товарами покупают
+            </h2>
+        </div>
 
-            <ul>
-                <li>в момент оформления заказа на сайте, вы выбираете удобный для себя постамат, если такая система работает в вашем городе;</li>
-                <li>на ваш телефон или e-mail придет уникальный код, это значит, что товар доставлен в постамат;</li>
-                <li>вы приходите к постамату, вводите полученный код и следует инструкциям автомата;</li>
-                <li>оплачиваете заказ в терминале постамата;</li>
-                <li>забираете товар.</li>
-            </ul>
+        <div class="slider__content">
+            <div class="slider__slider owl-carousel owl-theme">
+                
+                <div class="slider__item card">
+                    <div class="card__img-slider owl-carousel owl-theme">
+                        
+                        <img src="/assets/img/products2/1.png" alt="">
+                        
+                        <img src="/assets/img/products2/1.png" alt="">
+                        
+                        <img src="/assets/img/products2/1.png" alt="">
+                        
+                    </div>
 
-            <p>Срок хранения в постамате 3 дня, но можно продлить ещё на аналогичный срок. Чтобы уточнить информацию и продлить время хранения зайдите на сайт нашего партнера, введите номер заказа и телефон и следуйте подсказкам на сайте.</p>
+                    <h3 class="card__title"><a href="/card.html">Чугунный Казан 12 л круглое дно с крышкой</a></h3>
+
+                    <div class="card__bottom">
+                        <div class="card__cost">
+                            <b class="last">4 190</b>
+                            <b class="new">3 390 ₽</b>
+                        </div>
+                        <div class="card__reviews">
+                            <img src="./assets/img/icons/sprite.svg#star--accent" alt="">
+                            <img src="./assets/img/icons/sprite.svg#star--accent" alt="">
+                            <img src="./assets/img/icons/sprite.svg#star--accent" alt="">
+                            <img src="./assets/img/icons/sprite.svg#star--accent" alt="">
+                            <img src="./assets/img/icons/sprite.svg#star" alt="">
+                        </div>
+                        <div class="card__basket">
+                            <button class="card__add-btn" type="button">
+                                <svg><use xlink:href="./assets/img/icons/sprite.svg#cart-add"></use></svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card__tags">
+                        <span class="card__tag card__tag--green">Хит</span>
+                    </div>
+
+                    <div class="card__options">
+                        <button class="card__option active" type="button"><svg><use xlink:href="./assets/img/icons/sprite.svg#like"></use></svg></button>
+                        <button class="card__option hide-on-mob" type="button"><svg><use xlink:href="./assets/img/icons/sprite.svg#eye"></use></svg></button>
+                        <button class="card__option" type="button"><svg><use xlink:href="./assets/img/icons/sprite.svg#done-all"></use></svg></button>
+                    </div>
+                </div>
+                
+                <div class="slider__item card">
+                    <div class="card__img-slider owl-carousel owl-theme">
+                        
+                        <img src="/assets/img/products2/2.png" alt="">
+                        
+                        <img src="/assets/img/products2/2.png" alt="">
+                        
+                        <img src="/assets/img/products2/2.png" alt="">
+                        
+                    </div>
+
+                    <h3 class="card__title"><a href="/card.html">Чугунный Казан 12 л круглое дно с крышкой</a></h3>
+
+                    <div class="card__bottom">
+                        <div class="card__cost">
+                            <b class="last">4 190</b>
+                            <b class="new">3 390 ₽</b>
+                        </div>
+                        <div class="card__reviews">
+                            <img src="./assets/img/icons/sprite.svg#star--accent" alt="">
+                            <img src="./assets/img/icons/sprite.svg#star--accent" alt="">
+                            <img src="./assets/img/icons/sprite.svg#star--accent" alt="">
+                            <img src="./assets/img/icons/sprite.svg#star--accent" alt="">
+                            <img src="./assets/img/icons/sprite.svg#star" alt="">
+                        </div>
+                        <div class="card__basket">
+                            <button class="card__add-btn" type="button">
+                                <svg><use xlink:href="./assets/img/icons/sprite.svg#cart-add"></use></svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card__tags">
+                        <span class="card__tag card__tag--green">Хит</span>
+                    </div>
+
+                    <div class="card__options">
+                        <button class="card__option active" type="button"><svg><use xlink:href="./assets/img/icons/sprite.svg#like"></use></svg></button>
+                        <button class="card__option hide-on-mob" type="button"><svg><use xlink:href="./assets/img/icons/sprite.svg#eye"></use></svg></button>
+                        <button class="card__option" type="button"><svg><use xlink:href="./assets/img/icons/sprite.svg#done-all"></use></svg></button>
+                    </div>
+                </div>
+                
+                <div class="slider__item card">
+                    <div class="card__img-slider owl-carousel owl-theme">
+                        
+                        <img src="/assets/img/products2/3.png" alt="">
+                        
+                        <img src="/assets/img/products2/3.png" alt="">
+                        
+                        <img src="/assets/img/products2/3.png" alt="">
+                        
+                    </div>
+
+                    <h3 class="card__title"><a href="/card.html">Садж чугунный 36 см</a></h3>
+
+                    <div class="card__bottom">
+                        <div class="card__cost">
+                            <b class="last">4 190</b>
+                            <b class="new">3 490 ₽</b>
+                        </div>
+                        <div class="card__reviews">
+                            <img src="./assets/img/icons/sprite.svg#star--accent" alt="">
+                            <img src="./assets/img/icons/sprite.svg#star--accent" alt="">
+                            <img src="./assets/img/icons/sprite.svg#star--accent" alt="">
+                            <img src="./assets/img/icons/sprite.svg#star--accent" alt="">
+                            <img src="./assets/img/icons/sprite.svg#star" alt="">
+                        </div>
+                        <div class="card__basket">
+                            <button class="card__add-btn" type="button">
+                                <svg><use xlink:href="./assets/img/icons/sprite.svg#cart-add"></use></svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card__tags">
+                        <span class="card__tag card__tag--green">Хит</span>
+                    </div>
+
+                    <div class="card__options">
+                        <button class="card__option active" type="button"><svg><use xlink:href="./assets/img/icons/sprite.svg#like"></use></svg></button>
+                        <button class="card__option hide-on-mob" type="button"><svg><use xlink:href="./assets/img/icons/sprite.svg#eye"></use></svg></button>
+                        <button class="card__option" type="button"><svg><use xlink:href="./assets/img/icons/sprite.svg#done-all"></use></svg></button>
+                    </div>
+                </div>
+                
+                <div class="slider__item card">
+                    <div class="card__img-slider owl-carousel owl-theme">
+                        
+                        <img src="/assets/img/products2/4.png" alt="">
+                        
+                        <img src="/assets/img/products2/4.png" alt="">
+                        
+                        <img src="/assets/img/products2/4.png" alt="">
+                        
+                    </div>
+
+                    <h3 class="card__title"><a href="/card.html">Афганский казан 5л двухцветный</a></h3>
+
+                    <div class="card__bottom">
+                        <div class="card__cost">
+                            <b class="last">4 190</b>
+                            <b class="new">3 590 ₽</b>
+                        </div>
+                        <div class="card__reviews">
+                            <img src="./assets/img/icons/sprite.svg#star--accent" alt="">
+                            <img src="./assets/img/icons/sprite.svg#star--accent" alt="">
+                            <img src="./assets/img/icons/sprite.svg#star--accent" alt="">
+                            <img src="./assets/img/icons/sprite.svg#star--accent" alt="">
+                            <img src="./assets/img/icons/sprite.svg#star" alt="">
+                        </div>
+                        <div class="card__basket">
+                            <button class="card__add-btn" type="button">
+                                <svg><use xlink:href="./assets/img/icons/sprite.svg#cart-add"></use></svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card__tags">
+                        <span class="card__tag card__tag--green">Хит</span>
+                    </div>
+
+                    <div class="card__options">
+                        <button class="card__option active" type="button"><svg><use xlink:href="./assets/img/icons/sprite.svg#like"></use></svg></button>
+                        <button class="card__option hide-on-mob" type="button"><svg><use xlink:href="./assets/img/icons/sprite.svg#eye"></use></svg></button>
+                        <button class="card__option" type="button"><svg><use xlink:href="./assets/img/icons/sprite.svg#done-all"></use></svg></button>
+                    </div>
+                </div>
+                
+                <div class="slider__item card">
+                    <div class="card__img-slider owl-carousel owl-theme">
+                        
+                        <img src="/assets/img/products2/5.png" alt="">
+                        
+                        <img src="/assets/img/products2/5.png" alt="">
+                        
+                        <img src="/assets/img/products2/5.png" alt="">
+                        
+                    </div>
+
+                    <h3 class="card__title"><a href="/card.html">Чугунный Казан 12 л круглое дно с крышкой</a></h3>
+
+                    <div class="card__bottom">
+                        <div class="card__cost">
+                            <b class="last">2 190</b>
+                            <b class="new">1 190 ₽</b>
+                        </div>
+                        <div class="card__reviews">
+                            <img src="./assets/img/icons/sprite.svg#star--accent" alt="">
+                            <img src="./assets/img/icons/sprite.svg#star--accent" alt="">
+                            <img src="./assets/img/icons/sprite.svg#star--accent" alt="">
+                            <img src="./assets/img/icons/sprite.svg#star--accent" alt="">
+                            <img src="./assets/img/icons/sprite.svg#star" alt="">
+                        </div>
+                        <div class="card__basket">
+                            <button class="card__add-btn" type="button">
+                                <svg><use xlink:href="./assets/img/icons/sprite.svg#cart-add"></use></svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card__tags">
+                        <span class="card__tag card__tag--green">Хит</span>
+                    </div>
+
+                    <div class="card__options">
+                        <button class="card__option active" type="button"><svg><use xlink:href="./assets/img/icons/sprite.svg#like"></use></svg></button>
+                        <button class="card__option hide-on-mob" type="button"><svg><use xlink:href="./assets/img/icons/sprite.svg#eye"></use></svg></button>
+                        <button class="card__option" type="button"><svg><use xlink:href="./assets/img/icons/sprite.svg#done-all"></use></svg></button>
+                    </div>
+                </div>
+                
+            </div>
         </div>
     </section>
 

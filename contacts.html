@@ -3,425 +3,650 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Главная</title>
-    <link rel="stylesheet" href="assets/libs/owl-carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/libs/owl-carousel/owl.theme.default.min.css">
-    <link rel="stylesheet" href="assets/libs/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./assets/libs/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/libs/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/libs/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./assets/libs/range-slider.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 
 <body class="">
 
-    <div class="body-icon"></div>
-
-    <header class="header" id="header">
+    <header class="header">
     <div class="header__top-line top-line">
-        <div class="top-line__absolute">
-            <div class="top-line__wrapper">
-                <div class="container">
-                    <a class="top-line__logo" href="/"><img src="/assets/img/logo.png" width="170" height="55" alt=""></a>
+        <div class="top-line__top">
+            <div class="top-line__fixed">
+                <div class="top-line__wrapper container">
+                    <button class="top-line__menu-btn open-menu" type="button"><span></span></button>
 
-                    <div class="top-line__info info" data-da=".menu__wrapper,1024,last">
-                        <div class="info__item">
-                            <b class="info__title">Адрес</b>
-                            <p class="info__content info__content--address">Космонавта Беляева, 8</p>
-                        </div>
-                        <div class="info__item">
-                            <b class="info__title">Режим работы</b>
-                            <p class="info__content info__content--time">Пн-Пт 09:00-21:00</p>
-                        </div>
-                        <div class="info__item">
-                            <b class="info__title">Телефон</b>
-                            <p class="info__content info__content--tel"><a href="+73422266662">+7 (342) 226-66-62</a></p>
-                        </div>
-                    </div>
+                    <a class="top-line__logo" href="/"><img src="./assets/img/logo.svg" width="253" height="50" alt=""></a>
 
-                    <button class="top-line__mnu-btn" type="button">
-                        <span class="text">Меню</span>
-                        <span class="burger">
-                            <span></span>
-                        </span>
+
+                    <button class="top-line__city open-city" type="button" data-da=".top-line__nav,1023,last">
+                        <span>г. Пермь</span>
+                        <svg><use xlink:href="./assets/img/icons/sprite.svg#arrow-bottom"></use></svg>
                     </button>
-                </div>
 
-                <div class="menu" style="display:none;">
-                    <div class="container menu__wrapper">
-                        <ul class="menu__list">
-                            <li><a href="/doctors.html">Специалисты</a></li>
-                            <li><a href="/about.html">О нас</a></li>
-                            <li><a href="/price.html">Прайс</a></li>
-                            <li><a href="/contacts.html">Контакты</a></li>
-                            <li><a href="/blog.html">Блог</a></li>
-                            <li class="can-open"><a href="#">Услуги</a></li>
-                        </ul>
+                    <a class="top-line__phone" href="tel:+73421234455" data-da=".top-line__nav,1023,last">+7 (342) 123 44 55</a>
 
-                        <div class="sub-menu">
-    <div class="row sub-menu__wrapper">
-        
-        <div class="col col-12 col-md-6 col-lg-4">
-            <a class="sub-menu__sm-title" href="/page-1.html">Эстетика</a>
-            <ul class="sub-menu__list">
-                
-                <li><a href="/page-1.html">Виниры</a></li>
-                
-                <li><a href="/page-1.html">Брекеты на зубы</a></li>
-                
-                <li><a href="/page-1.html">Отбеливание зубов</a></li>
-                
-                <li><a href="/page-1.html">Реставрация зуба (нарастить зуб)</a></li>
-                
-            </ul>
-        </div>
-        
-        <div class="col col-12 col-md-6 col-lg-4">
-            <a class="sub-menu__sm-title" href="/page-1.html">Коронки</a>
-            <ul class="sub-menu__list">
-                
-                <li><a href="/page-1.html">Коронки на зуб</a></li>
-                
-                <li><a href="/page-1.html">Металлокерамическая коронка</a></li>
-                
-                <li><a href="/page-1.html">Керамическая коронка</a></li>
-                
-                <li><a href="/page-1.html">Металлическая коронка</a></li>
-                
-                <li><a href="/page-1.html">Металлопластмассовая коронка</a></li>
-                
-                <li><a href="/page-1.html">Циркониевые коронки</a></li>
-                
-            </ul>
-        </div>
-        
-        <div class="col col-12 col-md-6 col-lg-4">
-            <a class="sub-menu__sm-title" href="/page-1.html">Протезирование</a>
-            <ul class="sub-menu__list">
-                
-                <li><a href="/page-1.html">Протезирование зубов</a></li>
-                
-                <li><a href="/page-1.html">Съемные и частично-съемные протезы</a></li>
-                
-                <li><a href="/page-1.html">Мостовидные зубные протезы</a></li>
-                
-                <li><a href="/page-1.html">Бюгельные протезы</a></li>
-                
-                <li><a href="/page-1.html">Капы на зубы</a></li>
-                
-                <li><a href="/page-1.html">Протез бабочка</a></li>
-                
-                <li><a href="/page-1.html">Протезирование на базальных имплантах</a></li>
-                
-            </ul>
-        </div>
-        
-        <div class="col col-12 col-md-6 col-lg-4">
-            <a class="sub-menu__sm-title" href="/page-1.html">Гигиена, уход, защита</a>
-            <ul class="sub-menu__list">
-                
-                <li><a href="/page-1.html">Чистка зубов ультразвуком</a></li>
-                
-                <li><a href="/page-1.html">Фторирование зубов</a></li>
-                
-                <li><a href="/page-1.html">Герметизация фиссур</a></li>
-                
-                <li><a href="/page-1.html">Рентген зубов</a></li>
-                
-                <li><a href="/page-1.html">Установка пломбы</a></li>
-                
-            </ul>
-        </div>
-        
-        <div class="col col-12 col-md-6 col-lg-4">
-            <a class="sub-menu__sm-title" href="/page-1.html">Лечение</a>
-            <ul class="sub-menu__list">
-                
-                <li><a href="/page-1.html">Лечение зубов</a></li>
-                
-                <li><a href="/page-1.html">Лечение кариеса</a></li>
-                
-                <li><a href="/page-1.html">Лечение пульпита зуба</a></li>
-                
-                <li><a href="/page-1.html">Лечение периодонтита</a></li>
-                
-                <li><a href="/page-1.html">Клиновидный дефект зуба</a></li>
-                
-            </ul>
-        </div>
-        
-        <div class="col col-12 col-md-6 col-lg-4">
-            <a class="sub-menu__sm-title" href="/page-1.html">Удаление и хирургия</a>
-            <ul class="sub-menu__list">
-                
-                <li><a href="/page-1.html">Удаление зуба</a></li>
-                
-                <li><a href="/page-1.html">Имплантация зубов</a></li>
-                
-            </ul>
-        </div>
-        
-    </div>
-</div>
-
+                    <div class="top-line__abs">
+                        <nav class="top-line__nav">
+                            <ul class="top-line__menu">
+                                <li class="top-line__item"><a href="/article.html">Доставка</a></li>
+                                <li class="top-line__item"><a href="/page.html">Акции</a></li>
+                                <li class="top-line__item"><a href="/gallery.html">О нас</a></li>
+                                <li class="top-line__item"><a href="/blog.html">Наш блог</a></li>
+                                <li class="top-line__item"><a href="/page.html">Вакансии</a></li>
+                                <li class="top-line__item"><a href="/contacts.html">Контакты</a></li>
+                            </ul>
+                        </nav>
                     </div>
+
+                    <button class="top-line__search-btn open-search" type="button"><svg><use xlink:href="./assets/img/icons/sprite.svg#search"></use></svg></button>
                 </div>
+            </div>
+        </div>
+
+        <div class="top-line__bottom container">
+            <button class="top-line__catalog-btn open-catalog" type="button">
+                <svg><use xlink:href="./assets/img/icons/sprite.svg#menu"></use></svg>
+                <span>Каталог товаров</span>
+            </button>
+
+            <form class="top-line__search search">
+                <label class="search__input"><input type="search" placeholder="Поиск по товарам" required></label>
+                <button class="search__btn" type="submit"><svg><use xlink:href="./assets/img/icons/sprite.svg#search"></use></svg></button>
+            </form>
+
+            <ul class="top-line__pages">
+                <li class="top-line__link top-line__link--lk"><a href="#"><svg><use xlink:href="./assets/img/icons/sprite.svg#user"></use></svg></a></li>
+                <li class="top-line__link top-line__link--cart" data-count="2"><a href="/basket.html"><svg><use xlink:href="./assets/img/icons/sprite.svg#cart"></use></svg></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="header__catalog mnu-catalog" style="display:none;">
+        <div class="mnu-catalog__overlay">
+            <div class="mnu-catalog__left">
+                <h3 class="mnu-catalog__title">Каталог товаров</h3>
+
+                <nav class="mnu-catalog__nav">
+                    <ul class="mnu-catalog__menu">
+                        
+                        <li>
+                            <a href="/category.html">
+                                <img src="/assets/img/catalog-icons/1.svg" width="19" height="19" alt="">
+                                Чугунные казаны
+                            </a>
+                            <ul>
+                                
+                                <li><a href="/category.html">Подставка под садж</a></li>
+                                
+                                <li><a href="/category.html">Саджи из нержавеющей стали</a></li>
+                                
+                                <li><a href="/category.html">Саджи из стали</a></li>
+                                
+                                <li><a href="/category.html">Чугунные саджи</a></li>
+                                
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="/category.html">
+                                <img src="/assets/img/catalog-icons/2.svg" width="19" height="19" alt="">
+                                Печи для казана и треноги
+                            </a>
+                            <ul>
+                                
+                                <li><a href="/category.html">Саджи из стали</a></li>
+                                
+                                <li><a href="/category.html">Чугунные саджи</a></li>
+                                
+                                <li><a href="/category.html">Подставка под садж</a></li>
+                                
+                                <li><a href="/category.html">Саджи из нержавеющей стали</a></li>
+                                
+                                <li><a href="/category.html">Саджи из стали</a></li>
+                                
+                                <li><a href="/category.html">Чугунные саджи</a></li>
+                                
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="/category.html">
+                                <img src="/assets/img/catalog-icons/3.svg" width="19" height="19" alt="">
+                                Афганские  казаны
+                            </a>
+                            <ul>
+                                
+                                <li><a href="/category.html">Саджи из нержавеющей стали</a></li>
+                                
+                                <li><a href="/category.html">Саджи из стали</a></li>
+                                
+                                <li><a href="/category.html">Чугунные саджи</a></li>
+                                
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="/category.html">
+                                <img src="/assets/img/catalog-icons/4.svg" width="19" height="19" alt="">
+                                Мангалы
+                            </a>
+                            <ul>
+                                
+                                <li><a href="/category.html">Подставка под садж</a></li>
+                                
+                                <li><a href="/category.html">Саджи из нержавеющей стали</a></li>
+                                
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="/category.html">
+                                <img src="/assets/img/catalog-icons/5.svg" width="19" height="19" alt="">
+                                Аксессуары
+                            </a>
+                            <ul>
+                                
+                                <li><a href="/category.html">Подставка под садж</a></li>
+                                
+                                <li><a href="/category.html">Саджи из нержавеющей стали</a></li>
+                                
+                                <li><a href="/category.html">Саджи из стали</a></li>
+                                
+                                <li><a href="/category.html">Чугунные саджи</a></li>
+                                
+                                <li><a href="/category.html">Подставка под садж</a></li>
+                                
+                                <li><a href="/category.html">Саджи из нержавеющей стали</a></li>
+                                
+                                <li><a href="/category.html">Саджи из стали</a></li>
+                                
+                                <li><a href="/category.html">Чугунные саджи</a></li>
+                                
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="/category.html">
+                                <img src="/assets/img/catalog-icons/6.svg" width="19" height="19" alt="">
+                                Саджи и подставки
+                            </a>
+                            <ul>
+                                
+                                <li><a href="/category.html">Подставка под садж</a></li>
+                                
+                                <li><a href="/category.html">Саджи из нержавеющей стали</a></li>
+                                
+                                <li><a href="/category.html">Саджи из стали</a></li>
+                                
+                                <li><a href="/category.html">Чугунные саджи</a></li>
+                                
+                                <li><a href="/category.html">Саджи из стали</a></li>
+                                
+                                <li><a href="/category.html">Чугунные саджи</a></li>
+                                
+                                <li><a href="/category.html">Подставка под садж</a></li>
+                                
+                                <li><a href="/category.html">Саджи из нержавеющей стали</a></li>
+                                
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="/category.html">
+                                <img src="/assets/img/catalog-icons/7.svg" width="19" height="19" alt="">
+                                Наборы шампуров , решетки гриль
+                            </a>
+                            <ul>
+                                
+                                <li><a href="/category.html">Саджи из стали</a></li>
+                                
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="/category.html">
+                                <img src="/assets/img/catalog-icons/8.svg" width="19" height="19" alt="">
+                                Коптилки
+                            </a>
+                            <ul>
+                                
+                                <li><a href="/category.html">Подставка под садж</a></li>
+                                
+                                <li><a href="/category.html">Саджи из нержавеющей стали</a></li>
+                                
+                                <li><a href="/category.html">Саджи из стали</a></li>
+                                
+                                <li><a href="/category.html">Чугунные саджи</a></li>
+                                
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="/category.html">
+                                <img src="/assets/img/catalog-icons/9.svg" width="19" height="19" alt="">
+                                Тандыры
+                            </a>
+                            <ul>
+                                
+                                <li><a href="/category.html">Саджи из стали</a></li>
+                                
+                                <li><a href="/category.html">Подставка под садж</a></li>
+                                
+                                <li><a href="/category.html">Саджи из нержавеющей стали</a></li>
+                                
+                                <li><a href="/category.html">Чугунные саджи</a></li>
+                                
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="/category.html">
+                                <img src="/assets/img/catalog-icons/10.svg" width="19" height="19" alt="">
+                                Масло, рис, специи
+                            </a>
+                            <ul>
+                                
+                                <li><a href="/category.html">Чугунные саджи</a></li>
+                                
+                                <li><a href="/category.html">Подставка под садж</a></li>
+                                
+                                <li><a href="/category.html">Саджи из нержавеющей стали</a></li>
+                                
+                                <li><a href="/category.html">Саджи из стали</a></li>
+                                
+                                <li><a href="/category.html">Подставка под садж</a></li>
+                                
+                                <li><a href="/category.html">Саджи из нержавеющей стали</a></li>
+                                
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="/category.html">
+                                <img src="/assets/img/catalog-icons/11.svg" width="19" height="19" alt="">
+                                Посуда
+                            </a>
+                            <ul>
+                                
+                                <li><a href="/category.html">Подставка под садж</a></li>
+                                
+                                <li><a href="/category.html">Саджи из нержавеющей стали</a></li>
+                                
+                                <li><a href="/category.html">Подставка под садж</a></li>
+                                
+                                <li><a href="/category.html">Саджи из нержавеющей стали</a></li>
+                                
+                                <li><a href="/category.html">Саджи из стали</a></li>
+                                
+                                <li><a href="/category.html">Саджи из стали</a></li>
+                                
+                                <li><a href="/category.html">Чугунные саджи</a></li>
+                                
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="/category.html">
+                                <img src="/assets/img/catalog-icons/12.svg" width="19" height="19" alt="">
+                                Ножи и топорики
+                            </a>
+                            <ul>
+                                
+                                <li><a href="/category.html">Чугунные саджи</a></li>
+                                
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="/category.html">
+                                <img src="/assets/img/catalog-icons/13.svg" width="19" height="19" alt="">
+                                Самовары
+                            </a>
+                            <ul>
+                                
+                                <li><a href="/category.html">Подставка под садж</a></li>
+                                
+                                <li><a href="/category.html">Саджи из нержавеющей стали</a></li>
+                                
+                                <li><a href="/category.html">Саджи из стали</a></li>
+                                
+                                <li><a href="/category.html">Чугунные саджи</a></li>
+                                
+                                <li><a href="/category.html">Подставка под садж</a></li>
+                                
+                                <li><a href="/category.html">Саджи из нержавеющей стали</a></li>
+                                
+                                <li><a href="/category.html">Саджи из стали</a></li>
+                                
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="/category.html">
+                                <img src="/assets/img/catalog-icons/14.svg" width="19" height="19" alt="">
+                                Сковородки
+                            </a>
+                            <ul>
+                                
+                                <li><a href="/category.html">Саджи из стали</a></li>
+                                
+                                <li><a href="/category.html">Чугунные саджи</a></li>
+                                
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="mnu-catalog__right">
+                <form class="mnu-catalog__search search">
+                    <label class="search__input"><input type="search" placeholder="Поиск по товарам" required></label>
+                    <button class="search__btn" type="submit"><svg><use xlink:href="./assets/img/icons/sprite.svg#search"></use></svg></button>
+                </form>
+
+                <button class="mnu-catalog__close" type="button"><svg><use xlink:href="./assets/img/icons/sprite.svg#close"></use></svg></button>
             </div>
         </div>
     </div>
 
-    <div class="header__menu-line menu-line container">
-        <ul class="menu-line__list">
-            <li><a href="/doctors.html">Специалисты</a></li>
-            <li><a href="/about.html">О нас</a></li>
-            <li><a href="/price.html">Прайс</a></li>
-            <li><a href="/contacts.html">Контакты</a></li>
-            <li><a href="/blog.html">Блог</a></li>
-            <li class="can-open">
-                <a href="#">Услуги</a>
-                <div class="menu-line__sub-menu">
-                    <div class="container">
-                        <div class="sub-menu">
-    <div class="row sub-menu__wrapper">
-        
-        <div class="col col-12 col-md-6 col-lg-4">
-            <a class="sub-menu__sm-title" href="/page-1.html">Эстетика</a>
-            <ul class="sub-menu__list">
-                
-                <li><a href="/page-1.html">Виниры</a></li>
-                
-                <li><a href="/page-1.html">Брекеты на зубы</a></li>
-                
-                <li><a href="/page-1.html">Отбеливание зубов</a></li>
-                
-                <li><a href="/page-1.html">Реставрация зуба (нарастить зуб)</a></li>
-                
-            </ul>
-        </div>
-        
-        <div class="col col-12 col-md-6 col-lg-4">
-            <a class="sub-menu__sm-title" href="/page-1.html">Коронки</a>
-            <ul class="sub-menu__list">
-                
-                <li><a href="/page-1.html">Коронки на зуб</a></li>
-                
-                <li><a href="/page-1.html">Металлокерамическая коронка</a></li>
-                
-                <li><a href="/page-1.html">Керамическая коронка</a></li>
-                
-                <li><a href="/page-1.html">Металлическая коронка</a></li>
-                
-                <li><a href="/page-1.html">Металлопластмассовая коронка</a></li>
-                
-                <li><a href="/page-1.html">Циркониевые коронки</a></li>
-                
-            </ul>
-        </div>
-        
-        <div class="col col-12 col-md-6 col-lg-4">
-            <a class="sub-menu__sm-title" href="/page-1.html">Протезирование</a>
-            <ul class="sub-menu__list">
-                
-                <li><a href="/page-1.html">Протезирование зубов</a></li>
-                
-                <li><a href="/page-1.html">Съемные и частично-съемные протезы</a></li>
-                
-                <li><a href="/page-1.html">Мостовидные зубные протезы</a></li>
-                
-                <li><a href="/page-1.html">Бюгельные протезы</a></li>
-                
-                <li><a href="/page-1.html">Капы на зубы</a></li>
-                
-                <li><a href="/page-1.html">Протез бабочка</a></li>
-                
-                <li><a href="/page-1.html">Протезирование на базальных имплантах</a></li>
-                
-            </ul>
-        </div>
-        
-        <div class="col col-12 col-md-6 col-lg-4">
-            <a class="sub-menu__sm-title" href="/page-1.html">Гигиена, уход, защита</a>
-            <ul class="sub-menu__list">
-                
-                <li><a href="/page-1.html">Чистка зубов ультразвуком</a></li>
-                
-                <li><a href="/page-1.html">Фторирование зубов</a></li>
-                
-                <li><a href="/page-1.html">Герметизация фиссур</a></li>
-                
-                <li><a href="/page-1.html">Рентген зубов</a></li>
-                
-                <li><a href="/page-1.html">Установка пломбы</a></li>
-                
-            </ul>
-        </div>
-        
-        <div class="col col-12 col-md-6 col-lg-4">
-            <a class="sub-menu__sm-title" href="/page-1.html">Лечение</a>
-            <ul class="sub-menu__list">
-                
-                <li><a href="/page-1.html">Лечение зубов</a></li>
-                
-                <li><a href="/page-1.html">Лечение кариеса</a></li>
-                
-                <li><a href="/page-1.html">Лечение пульпита зуба</a></li>
-                
-                <li><a href="/page-1.html">Лечение периодонтита</a></li>
-                
-                <li><a href="/page-1.html">Клиновидный дефект зуба</a></li>
-                
-            </ul>
-        </div>
-        
-        <div class="col col-12 col-md-6 col-lg-4">
-            <a class="sub-menu__sm-title" href="/page-1.html">Удаление и хирургия</a>
-            <ul class="sub-menu__list">
-                
-                <li><a href="/page-1.html">Удаление зуба</a></li>
-                
-                <li><a href="/page-1.html">Имплантация зубов</a></li>
-                
-            </ul>
-        </div>
-        
-    </div>
-</div>
-
-                    </div>
-                </div>
+    <div class="header__bottom bottom-line">
+        <ul class="bottom-line__wrapper container">
+            <li class="bottom-line__item">
+                <a href="/">
+                    <svg><use xlink:href="./assets/img/icons/sprite.svg#home"></use></svg>
+                    <span>Главная</span>
+                </a>
+            </li>
+            <li class="bottom-line__item">
+                <button class="open-catalog" type="button">
+                    <svg><use xlink:href="./assets/img/icons/sprite.svg#menu"></use></svg>
+                    <span>Каталог</span>
+                </button>
+            </li>
+            <li class="bottom-line__item">
+                <a href="#">
+                    <svg><use xlink:href="./assets/img/icons/sprite.svg#user"></use></svg>
+                    <span>Войти</span>
+                </a>
+            </li>
+            <li class="bottom-line__item">
+                <a href="#">
+                    <svg><use xlink:href="./assets/img/icons/sprite.svg#like"></use></svg>
+                    <span>Избранное</span>
+                </a>
+            </li>
+            <li class="bottom-line__item count" data-count="2">
+                <a href="/basket.html">
+                    <svg><use xlink:href="./assets/img/icons/sprite.svg#cart"></use></svg>
+                    <span>Корзина</span>
+                </a>
             </li>
         </ul>
+    </div>
+
+    <div class="header__city city-modal" style="display: none;">
+        <div class="city-modal__overlay">
+            <h3 class="city-modal__title h2">Выберите город</h3>
+
+            <form class="top-line__search search">
+                <label class="search__input"><input type="search" placeholder="Ваш город" required></label>
+                <button class="search__btn" type="submit"><svg><use xlink:href="./assets/img/icons/sprite.svg#search"></use></svg></button>
+            </form>
+
+            <button class="city-modal__auto" type="button">Определить автоматически</button>
+
+            <div class="city-modal__list">
+                <label class="city-modal__item">
+                    <input type="radio" value="Пермь" name="city" checked>
+                    <span>Пермь</span>
+                </label>
+                <label class="city-modal__item">
+                    <input type="radio" value="Москва" name="city">
+                    <span>Москва</span>
+                </label>
+                <label class="city-modal__item">
+                    <input type="radio" value="Екатеринбург" name="city">
+                    <span>Екатеринбург</span>
+                </label>
+                <label class="city-modal__item">
+                    <input type="radio" value="Краснодар" name="city">
+                    <span>Краснодар</span>
+                </label>
+                <label class="city-modal__item">
+                    <input type="radio" value="Нижний новгород" name="city">
+                    <span>Нижний новгород</span>
+                </label>
+                <label class="city-modal__item">
+                    <input type="radio" value="Новосибирск" name="city">
+                    <span>Новосибирск</span>
+                </label>
+                <label class="city-modal__item">
+                    <input type="radio" value="Ростов-на-Дону" name="city">
+                    <span>Ростов-на-Дону</span>
+                </label>
+                <label class="city-modal__item">
+                    <input type="radio" value="Самара" name="city">
+                    <span>Самара</span>
+                </label>
+                <label class="city-modal__item">
+                    <input type="radio" value="Санкт-Петербург" name="city">
+                    <span>Санкт-Петербург</span>
+                </label>
+                <label class="city-modal__item">
+                    <input type="radio" value="Челябинск" name="city">
+                    <span>Челябинск</span>
+                </label>
+            </div>
+
+            <button class="city-modal__send button" type="button">Готово</button>
+
+            <button class="city-modal__close" type="button">
+                <svg><use xlink:href="./assets/img/icons/sprite.svg#close-small"></use></svg>
+            </button>
+        </div>
     </div>
 </header>
 
 
-    <section class="contacts-page section">
-        <div class="container">
-            <div class="row">
-                <div class="col col-12 col-lg-4 contacts-page__left">
-                    <div class="section__header">
-                        <h2 class="section__title h2">КОНТАКТЫ</h2>
+    <section class="bread-crumbs container">
+        <ul class="bread-crumbs__list">
+            <li class="bread-crumbs__item"><a href="/">Главная</a></li>
+            <li class="bread-crumbs__item"><a>Контакты</a></li>
+        </ul>
+    </section>
+
+    <section class="contacts container">
+        <div class="row">
+            <div class="col col-14 col-lg-5">
+                <div class="contacts__content">
+                    <div>
+                        <h1 class="contacts__title h2">Контакты</h1>
+                        <p class="contacts__item">Ваш город:
+                            <button class="contacts__city open-city" type="button">
+                                <span>г. Пермь</span>
+                                <svg><use xlink:href="./assets/img/icons/sprite.svg#arrow-bottom"></use></svg>
+                            </button>
+                        </p>
+                        <p class="contacts__item"><a href="tel:+79655667552">+7 (965) 566 75 52</a></p>
+                        <p class="contacts__item">г. Пермь, улица Хохрякова, 6А</p>
+                        <p class="contacts__item"><a href="mailto:info@zharimvarim.ru">info@zharimvarim.ru</a></p>
                     </div>
 
-                    <div class="contacts-page__content">
-                        <p><b>АДРЕС</b>
-                            г. Пермь, ул. Космонавта Беляева,8
-                        </p>
-                        <p>
-                            <b> РЕЖИМ РАБОТЫ</b>
-                            Пн-Пт 09:00 до 21:00
-                        </p>
-                        <p>
-                            <b>КОНТАКТНЫЙ ТЕЛЕФОН</b>
-                            <a href="+73422266662">+7 (342) 226-66-62</a>
-                        </p>
-                    </div>
-
-                    <a class="contacts-page__btn button button--center js-scroll-to" href="#form1">Записаться на прием</a>
-                </div>
-                <div class="col col-12 col-lg-8">
-                    <div class="contacts-page__map" id="map2" data-da=".contacts-page__left,1024,1"></div>
+                    <ul class="contacts__soc-list">
+                        <li><a href="#"><svg><use xlink:href="./assets/img/icons/sprite.svg#soc-vk"></use></svg></a></li>
+                        <li><a href="#"><svg><use xlink:href="./assets/img/icons/sprite.svg#soc-inst"></use></svg></a></li>
+                        <li><a href="#"><svg><use xlink:href="./assets/img/icons/sprite.svg#soc-tg"></use></svg></a></li>
+                        <li><a href="#"><svg><use xlink:href="./assets/img/icons/sprite.svg#soc-wa"></use></svg></a></li>
+                        <li><a href="#"><svg><use xlink:href="./assets/img/icons/sprite.svg#soc-ok"></use></svg></a></li>
+                        <li><a href="#"><svg><use xlink:href="./assets/img/icons/sprite.svg#soc-vb"></use></svg></a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
-
-        <div class="form form--type1 section section--mob-accent" id="form1">
-            <form class="container" method="POST">
-                <h3 class="form__title h3">Заполните форму и мы свяжемся с вами!</h3>
-
-                <div class="row form__inputs">
-                    <div class="col col-12 col-lg-4 form__input">
-                        <label class="input">
-                            <input type="text" placeholder="Имя">
-                        </label>
-                        <label class="input">
-                            <input type="tel" placeholder="Мобильный телефон">
-                        </label>
-                    </div>
-                    <div class="col col-12 col-lg-4 form__input">
-                        <label class="input">
-                            <input type="text" placeholder="Что вас беспокоит?">
-                        </label>
-                        <label class="input">
-                            <input type="text" placeholder="Желаемое время приема">
-                        </label>
-                    </div>
+            <div class="col col-14 col-lg-9">
+                <div class="contacts__map">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A283c78dffa5479e60ba8a894a1afa2b8e0f88ac9b3eb93fc8a005ce1b99b9d72&amp;source=constructor" width="100%" height="510" frameborder="0"></iframe>
                 </div>
-
-                <div class="row form__bottom">
-                    <div class="col col-12 col-lg-4">
-                        <p>Нажимая на кнопку «Записаться на приём» Вы даётё своё согласие с условиями обработки персональных данных</p>
-                    </div>
-                    <div class="col col-12 col-lg-4">
-                        <button class="button button--center button--full" type="submit">Записаться на прием</button>
-                    </div>
-                </div>
-
-                <p class="form__img form__img--1"><img src="/assets/img/sect-2.png" alt=""></p>
-            </form>
+            </div>
         </div>
     </section>
 
+    <section class="requisite container">
+        <div class="requisite__title">
+            <h2 class="h2">Реквизиты</h2>
+        </div>
+        <div class="requisite__content">
+            <table class="requisite__table">
+                <tr>
+                    <td>Полное наименование:</td>
+                    <td>Общество с ограниченной ответственностью «Жарим-Варим»</td>
+                </tr>
+                <tr>
+                    <td>Сокращенное наименование:</td>
+                    <td>ООО «Жарим-Варим»</td>
+                </tr>
+                <tr>
+                    <td>Телефон:</td>
+                    <td>+7 (391) 25-25-910</td>
+                </tr>
+                <tr>
+                    <td>Юридический адрес:</td>
+                    <td>660049, Пермский край, Пермь, улица Хохрякова, 6А, офис 8-01</td>
+                </tr>
+                <tr>
+                    <td>ИНН/КПП:</td>
+                    <td>2466260167 / 246601001</td>
+                </tr>
+                <tr>
+                    <td>БИК:</td>
+                    <td>045004774</td>
+                </tr>
+                <tr>
+                    <td>Расчётный счёт:</td>
+                    <td>40702810623300000776 в банке Филиал «Новосибирский» в г. Новосибирск АКЦИОНЕРНОГО ОБЩЕСТВА «АЛЬФА-БАНК», к/с 30101810600000000774</td>
+                </tr>
+            </table>
 
-    <footer class="footer section section--accent">
-        <div class="container">
-            <div class="footer__wrapper">
-                <div class="row">
-                    <div class="col col-12 col-lg-3 footer__left">
-                        <a class="footer__logo js-scroll-to" href="#header"><img src="/assets/img/logo.png" width="170" height="55" alt=""></a>
+            <button class="requisite__btn button" type="button">Скачать реквизиты</button>
+        </div>
+    </section>
 
-                        <ul class="footer__soc soc-btns" data-da=".footer__top,1024,last">
-                            <li class="soc-btns__item"><a href="#"><svg><use xlink:href="assets/img/icons/sprite.svg#inst"></use></svg></a></li>
-                            <li class="soc-btns__item"><a href="#"><svg><use xlink:href="assets/img/icons/sprite.svg#yt"></use></svg></a></li>
-                            <li class="soc-btns__item"><a href="#"><svg><use xlink:href="assets/img/icons/sprite.svg#wa"></use></svg></a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col col-12 col-lg-9">
-                        <div class="footer__top">
-                            <div class="footer__info info">
-                                <div class="info__item">
-                                    <b class="info__title">Адрес</b>
-                                    <p class="info__content info__content--address">Космонавта Беляева, 8</p>
-                                </div>
-                                <div class="info__item">
-                                    <b class="info__title">Режим работы</b>
-                                    <p class="info__content info__content--time">Пн-Пт 09:00-21:00</p>
-                                </div>
-                                <div class="info__item">
-                                    <b class="info__title">Телефон</b>
-                                    <p class="info__content info__content--tel"><a href="+73422266662">+7 (342) 226-66-62</a></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <form class="footer__form form" method="POST">
-                            <div class="row">
-                                <div class="col col-12 col-lg-4 form__input">
-                                    <label class="input">
-                                        <input type="text" placeholder="Имя">
-                                    </label>
-                                </div>
-                                <div class="col col-12 col-lg-4 form__input">
-                                    <label class="input">
-                                        <input type="tel" placeholder="Мобильный телефон">
-                                    </label>
-                                </div>
-                                <div class="col col-12 col-lg-4">
-                                    <button class="footer__btn button button--center button--full" type="submit">Записаться на прием</button>
-                                </div>
-                            </div>
-                            <div class="row form__conf">
-                                <div class="col col-12">
-                                    <p>Нажимая на кнопку «Записаться на приём» Вы даётё своё согласие с условиями обработки персональных данных</p>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+    <section class="connect container">
+        <div class="connect__title">
+            <h2 class="h2">Обратная связь</h2>
+        </div>
+        <form class="connect__content">
+            <div class="row">
+                <div class="col col-14 col-lg-7">
+                    <label class="input"><input type="text" required><span>Имя</span></label>
+                    <label class="input"><input type="tel" required><span>Телефон</span></label>
+                    <label class="input"><input type="email" required><span>Email</span></label>
+                </div>
+                <div class="col col-14 col-lg-7">
+                    <label class="input input--textarea">
+                        <textarea required></textarea><span>Вопрос</span>
+                    </label>
                 </div>
             </div>
+
+            <div class="connect__bottom">
+                <label class="connect__check">
+                    <input type="checkbox" checked required>
+                    <span></span>
+                    <p>Я согласен на <a href="#">обработку персональных данных</a></p>
+                </label>
+
+                <button class="connect__btn button" type="button">Отправить</button>
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__col-1">
+                <div>
+                    <h3 class="footer__title">Контакты</h3>
+                    <div class="footer__links">
+                        <p class="footer__link footer__link--tel"><a href="tel:+79655667552">+7 965 566-75-52</a></p>
+                        <p class="footer__link"><a href="mailto:facetraf@yandex.ru">facetraf@yandex.ru</a></p>
+                        <p class="footer__link">Склад в Перми: Хохрякова 6а</p>
+                    </div>
+                </div>
+                <ul class="footer__soc-list">
+                    <li><a href="#"><svg><use xlink:href="./assets/img/icons/sprite.svg#soc-vk"></use></svg></a></li>
+                    <li><a href="#"><svg><use xlink:href="./assets/img/icons/sprite.svg#soc-inst"></use></svg></a></li>
+                    <li><a href="#"><svg><use xlink:href="./assets/img/icons/sprite.svg#soc-tg"></use></svg></a></li>
+                    <li><a href="#"><svg><use xlink:href="./assets/img/icons/sprite.svg#soc-wa"></use></svg></a></li>
+                    <li><a href="#"><svg><use xlink:href="./assets/img/icons/sprite.svg#soc-ok"></use></svg></a></li>
+                    <li><a href="#"><svg><use xlink:href="./assets/img/icons/sprite.svg#soc-vb"></use></svg></a></li>
+                </ul>
+            </div>
+            <div class="footer__col-2">
+                <h3 class="footer__title">Информация</h3>
+                <ul class="footer__menu-links">
+                    
+                    <li><a href="#">Акции</a></li>
+                    
+                    <li><a href="#">Доставка</a></li>
+                    
+                    <li><a href="#">О нас</a></li>
+                    
+                    <li><a href="#">Возврат товара</a></li>
+                    
+                    <li><a href="#">Наш блог</a></li>
+                    
+                    <li><a href="#">Условия соглашения</a></li>
+                    
+                    <li><a href="#">Вакансии</a></li>
+                    
+                    <li><a href="#">Подарочные сертификаты</a></li>
+                    
+                    <li><a href="#">Контакты</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer__col-3">
+                <h3 class="footer__title">Категории товаров</h3>
+                <ul class="footer__menu-links">
+                    
+                    <li><a href="#">Акция! Шумовка в подарок</a></li>
+                    
+                    <li><a href="#">Садж сковорода</a></li>
+                    
+                    <li><a href="#">Афганские казаны и аксессуары</a></li>
+                    
+                    <li><a href="#">Тандыры и аксессуары</a></li>
+                    
+                    <li><a href="#">Мангалы и аксессуары</a></li>
+                    
+                    <li><a href="#">Чугунные казаны</a></li>
+                    
+                    <li><a href="#">Ножи узбекские</a></li>
+                    
+                    <li><a href="#">Узбекская посуда</a></li>
+                    
+                    <li><a href="#">Подарочные наборы шампуров</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer__col-4">
+                <button class="footer__btn button" type="button">Задать вопрос</button>
+            </div>
         </div>
-    </footer>
+
+        <p class="footer__copy">Жарим-Варим © 2022</p>
+    </div>
+</footer>
+
 
     <script type="text/javascript" src="js/main.js"></script>
 </body>
